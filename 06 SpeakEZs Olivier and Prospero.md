@@ -16,10 +16,10 @@ The current machine learning ecosystem has been dominated by a single approach: 
 %%{init: {'theme': 'dark', 'themeVariables': { 'primaryColor': '#242424', 'primaryTextColor': '#fff', 'primaryBorderColor': '#888', 'lineColor': '#d3d3d3', 'secondaryColor': '#2b2b2b', 'tertiaryColor': '#333' }}}%%
 flowchart TD
     subgraph Monolithic["Monolithic ML Approach (Fragile)"]
-        PyTorch["Single Framework\n(PyTorch/TensorFlow)"]
-        CUDA["Single Accelerator Type\n(NVIDIA GPUs)"]
-        Data["Massive Datasets\n(Increasing Size)"]
-        Single["Single Model Architecture\n(Transformer)"]
+        PyTorch["Single Framework | (PyTorch/TensorFlow)"]
+        CUDA["Single Accelerator Type | (NVIDIA GPUs)"]
+        Data["Massive Datasets | (Increasing Size)"]
+        Single["Single Model Architecture | (Transformer)"]
         
         PyTorch --> CUDA
         CUDA --> Data
@@ -144,13 +144,13 @@ The AI hardware landscape is rapidly diversifying beyond NVIDIA GPUs:
 %%{init: {'theme': 'dark', 'themeVariables': { 'primaryColor': '#242424', 'primaryTextColor': '#fff', 'primaryBorderColor': '#888', 'lineColor': '#d3d3d3', 'secondaryColor': '#2b2b2b', 'tertiaryColor': '#333' }}}%%
 flowchart LR
     subgraph Accelerators["Diverse AI Accelerators"]
-        NVIDIA["NVIDIA GPUs\nCUDA/Tensor Cores"]
-        AMD["AMD GPUs\nROCm/Matrix Cores"]
-        Intel["Intel\nXe Matrix Extensions"]
-        Google["Google TPUs\nMatrix Multiplier Units"]
-        Tenstorrent["Tenstorrent\nTensix Cores"]
-        Cerebras["Cerebras\nWafer Scale Engine"]
-        Custom["Custom ASICs\nApplication-Specific"]
+        NVIDIA["NVIDIA GPUs | CUDA/Tensor Cores"]
+        AMD["AMD GPUs | ROCm/Matrix Cores"]
+        Intel["Intel | Xe Matrix Extensions"]
+        Google["Google TPUs | Matrix Multiplier Units"]
+        Tenstorrent["Tenstorrent | Tensix Cores"]
+        Cerebras["Cerebras | Wafer Scale Engine"]
+        Custom["Custom ASICs | Application-Specific"]
     end
     
     subgraph Characteristics["Key Differentiators"]
@@ -213,8 +213,8 @@ graph LR
     Shift --> Inference
     
     subgraph HardwareNeeds["Changing Hardware Requirements"]
-        TrainGPU["Training: High Memory Bandwidth\nMassive Parallelism"]
-        InferenceNeeds["Test-Time: Low Latency\nDynamic Scheduling\nMemory Efficiency"]
+        TrainGPU["Training: High Memory Bandwidth | Massive Parallelism"]
+        InferenceNeeds["Test-Time: Low Latency | Dynamic Scheduling | Memory Efficiency"]
     end
     
     Training -.-> TrainGPU
@@ -576,9 +576,9 @@ graph TD
     end
     
     subgraph Characteristics["Hardware Characteristics"]
-        NVIDIA_C["• 108 SM Units\n• 40-80GB HBM2\n• 1.5TB/s bandwidth\n• XNOR via custom kernels"]
-        CPU_C["• 64-128 cores\n• AVX-512 SIMD\n• <1TB/s memory bandwidth\n• VNNI instructions"]
-        Tenstorrent_C["• 120 Tensix cores\n• 120MB SRAM\n• Native binary operations\n• RISC-V programmable"]
+        NVIDIA_C["• 108 SM Units | • 40-80GB HBM2 | • 1.5TB/s bandwidth | • XNOR via custom kernels"]
+        CPU_C["• 64-128 cores | • AVX-512 SIMD | • <1TB/s memory bandwidth | • VNNI instructions"]
+        Tenstorrent_C["• 120 Tensix cores | • 120MB SRAM | • Native binary operations | • RISC-V programmable"]
     end
     
     NVIDIA --> NVIDIA_C
@@ -586,9 +586,9 @@ graph TD
     Tenstorrent --> Tenstorrent_C
     
     subgraph CodeGen["Unique Optimization Strategies"]
-        CUDA["CUDA Kernels\nThread coarsening\nShared memory tiling"]
-        AVX["AVX-512 Vectorization\nCache blocking\nSIMD VNNI"]
-        Tensix["Packet Neural Networks\nComputational graph mapping\nIn-memory execution"]
+        CUDA["CUDA Kernels | Thread coarsening | Shared memory tiling"]
+        AVX["AVX-512 Vectorization | Cache blocking | SIMD VNNI"]
+        Tensix["Packet Neural Networks | Computational graph mapping | In-memory execution"]
     end
     
     NVIDIA_C --> CUDA

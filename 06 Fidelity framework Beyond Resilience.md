@@ -10,10 +10,10 @@ This document analyzes how the Fidelity framework embodies antifragile principle
 %%{init: {'theme': 'dark', 'themeVariables': { 'primaryColor': '#242424', 'primaryTextColor': '#fff', 'primaryBorderColor': '#888', 'lineColor': '#d3d3d3', 'secondaryColor': '#2b2b2b', 'tertiaryColor': '#333' }}}%%
 flowchart TD
     subgraph FragilitySpectrum["System Response to Volatility Spectrum"]
-        Fragile["Fragile\n(Harms from disorder)"]
-        Robust["Robust\n(Resists disorder)"]
-        Resilient["Resilient\n(Recovers from disorder)"]
-        Antifragile["Antifragile\n(Gains from disorder)"]
+        Fragile["Fragile | (Harms from disorder)"]
+        Robust["Robust | (Resists disorder)"]
+        Resilient["Resilient | (Recovers from disorder)"]
+        Antifragile["Antifragile | (Gains from disorder)"]
     end
 
     Fragile -->|Evolves to| Robust
@@ -21,10 +21,10 @@ flowchart TD
     Resilient -->|Evolves to| Antifragile
     
     subgraph Example["Example Responses to System Failure"]
-        FE["System crashes\nwhen component fails"]
-        RE["System continues\nwith degraded service"]
-        RL["System automatically\nreplaces failed component"]
-        AF["System improves\narchitecture to prevent\nsimilar failures"]
+        FE["System crashes | when component fails"]
+        RE["System continues | with degraded service"]
+        RL["System automatically | replaces failed component"]
+        AF["System improves | architecture to prevent | similar failures"]
     end
     
     Fragile --- FE
@@ -70,15 +70,15 @@ Most traditional software systems attempt to prevent failures. The Fidelity fram
 %%{init: {'theme': 'dark', 'themeVariables': { 'primaryColor': '#242424', 'primaryTextColor': '#fff', 'primaryBorderColor': '#888', 'lineColor': '#d3d3d3', 'secondaryColor': '#2b2b2b', 'tertiaryColor': '#333' }}}%%
 flowchart TD
     subgraph Traditional["Traditional Error Handling"]
-        TP["Prevent Errors\nAt All Costs"]
-        TC["Complex Error\nPrevention Logic"]
-        TF["System-Wide Failure\nWhen Prevention Fails"]
+        TP["Prevent Errors | At All Costs"]
+        TC["Complex Error | Prevention Logic"]
+        TF["System-Wide Failure | When Prevention Fails"]
     end
     
     subgraph Antifragile["Antifragile Error Handling"]
-        AP["Accept That\nErrors Will Happen"]
-        AS["Supervision Hierarchies\nContain Failures"]
-        AL["Learn From Failures\nAutomatic Adaptation"]
+        AP["Accept That | Errors Will Happen"]
+        AS["Supervision Hierarchies | Contain Failures"]
+        AL["Learn From Failures | Automatic Adaptation"]
     end
     
     TP --> TC --> TF
@@ -168,10 +168,10 @@ flowchart LR
     
     subgraph Composition["Composition Approach (Antifragile)"]
         Base["Base Config"]
-        Transform1["Memory\nTransform"]
-        Transform2["Platform\nTransform"]
-        Transform3["GC\nTransform"]
-        NewConfig["Final\nConfig"]
+        Transform1["Memory | Transform"]
+        Transform2["Platform | Transform"]
+        Transform3["GC | Transform"]
+        NewConfig["Final | Config"]
         
         Base --> Transform1
         Transform1 --> Transform2
@@ -304,12 +304,12 @@ By removing per-actor heaps in favor of process-wide shared heaps, the framework
 %%{init: {'theme': 'dark', 'themeVariables': { 'primaryColor': '#242424', 'primaryTextColor': '#fff', 'primaryBorderColor': '#888', 'lineColor': '#d3d3d3', 'secondaryColor': '#2b2b2b', 'tertiaryColor': '#333' }}}%%
 flowchart TB
     subgraph Erlang["Erlang Model (Complex)"]
-        EA1["Actor 1\nHeap"]
-        EA2["Actor 2\nHeap"]
-        EA3["Actor 3\nHeap"]
-        EA4["Actor 4\nHeap"]
-        EA5["Actor 5\nHeap"]
-        EA6["Actor 6\nHeap"]
+        EA1["Actor 1 | Heap"]
+        EA2["Actor 2 | Heap"]
+        EA3["Actor 3 | Heap"]
+        EA4["Actor 4 | Heap"]
+        EA5["Actor 5 | Heap"]
+        EA6["Actor 6 | Heap"]
         
         subgraph EMsg["Message Passing"]
             Copy["Copy Message"]
@@ -321,9 +321,9 @@ flowchart TB
     subgraph Olivier["Olivier Model (Simplified)"]
         subgraph Process1["Process 1"]
             Heap1["Shared Heap"]
-            OA1["Actor 1\nMailbox"]
-            OA2["Actor 2\nMailbox"]
-            OA3["Actor 3\nMailbox"]
+            OA1["Actor 1 | Mailbox"]
+            OA2["Actor 2 | Mailbox"]
+            OA3["Actor 3 | Mailbox"]
             
             Heap1 --- OA1
             Heap1 --- OA2
@@ -332,9 +332,9 @@ flowchart TB
         
         subgraph Process2["Process 2"]
             Heap2["Shared Heap"]
-            OA4["Actor 4\nMailbox"]
-            OA5["Actor 5\nMailbox"]
-            OA6["Actor 6\nMailbox"]
+            OA4["Actor 4 | Mailbox"]
+            OA5["Actor 5 | Mailbox"]
+            OA6["Actor 6 | Mailbox"]
             
             Heap2 --- OA4
             Heap2 --- OA5
@@ -342,8 +342,8 @@ flowchart TB
         end
         
         subgraph OMsg["Message Passing"]
-            DirectRef["Direct Reference\n(Same Process)"]
-            BAREWire["BAREWire Protocol\n(Cross-Process)"]
+            DirectRef["Direct Reference | (Same Process)"]
+            BAREWire["BAREWire Protocol | (Cross-Process)"]
         end
         
         OA1 --> DirectRef --> OA2
@@ -512,7 +512,7 @@ flowchart TB
     subgraph LayeredOpt["Layered Optimization (Antifragile)"]
         Original["Original Code"]
         Canonicalize["Canonicalize Pass"]
-        CSE["Common Subexpression\nElimination"]
+        CSE["Common Subexpression | Elimination"]
         LoopOpt["Loop Optimization"]
         Vectorize["Vectorization"]
         
@@ -654,12 +654,12 @@ flowchart TB
     end
     
     subgraph ActorSystem["Actor System (Antifragile)"]
-        Actor1["Actor 1\nLocal State"]
-        Actor2["Actor 2\nLocal State"]
-        Actor3["Actor 3\nLocal State"]
-        Actor4["Actor 4\nLocal State"]
-        Actor5["Actor 5\nLocal State"]
-        Actor6["Actor 6\nLocal State"]
+        Actor1["Actor 1 | Local State"]
+        Actor2["Actor 2 | Local State"]
+        Actor3["Actor 3 | Local State"]
+        Actor4["Actor 4 | Local State"]
+        Actor5["Actor 5 | Local State"]
+        Actor6["Actor 6 | Local State"]
         
         Actor1 <-- "Messages" --> Actor2
         Actor1 <-- "Messages" --> Actor3
@@ -723,7 +723,7 @@ By recognizing patterns in code and automatically optimizing them, the system ca
 %%{init: {'theme': 'dark', 'themeVariables': { 'primaryColor': '#242424', 'primaryTextColor': '#fff', 'primaryBorderColor': '#888', 'lineColor': '#d3d3d3', 'secondaryColor': '#2b2b2b', 'tertiaryColor': '#333' }}}%%
 flowchart LR
     subgraph Input["Input Code"]
-        StandardLoop["Standard\nVector Loop"]
+        StandardLoop["Standard | Vector Loop"]
     end
     
     subgraph PatternRecognition["Pattern Recognition"]
@@ -733,9 +733,9 @@ flowchart LR
     end
     
     subgraph Output["Optimized Output"]
-        SIMD["SIMD\nInstructions"]
+        SIMD["SIMD | Instructions"]
         GPU["GPU Kernel"]
-        Vectorized["Auto-vectorized\nLoop"]
+        Vectorized["Auto-vectorized | Loop"]
     end
     
     Input --> PatternRecognition

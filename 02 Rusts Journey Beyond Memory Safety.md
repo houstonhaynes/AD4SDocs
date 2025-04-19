@@ -97,7 +97,7 @@ Rust's borrow checker is simultaneously its greatest innovation and its most sig
 %%{init: {'theme': 'dark', 'themeVariables': { 'primaryColor': '#242424', 'primaryTextColor': '#fff', 'primaryBorderColor': '#888', 'lineColor': '#d3d3d3', 'secondaryColor': '#2b2b2b', 'tertiaryColor': '#333' }}}%%
 flowchart TD
     subgraph BorrowChecker["Borrow Checker Architecture"]
-        Rules["Ownership Rules\n• One owner at a time\n• Multiple readers OR one writer\n• No dangling references"]
+        Rules["Ownership Rules | • One owner at a time | • Multiple readers OR one writer | • No dangling references"]
         Verification["Static Verification at Compile-Time"]
         NoRuntime["Zero Runtime Overhead"]
     end
