@@ -16,7 +16,7 @@ The traditional interpretation of CAP suggests a binary choice: "pick any two." 
 
 Even when architects don't explicitly consider these factors, technology decisions reveal implied balancing of how they view the CAP theorem in the context of the system under their purview. Recognizing the various shades/gradients and triangulating between them is key to a resilient architecture.
 
-In reality, systems operate on continuums of consistency, availability, and partition tolerance, with various components making different trade-offs. A more nuanced understanding recognizes that:
+In reality, systems constantly perform a balancing act around consistency, availability, and partition tolerance, with various components making different trade-offs. A more nuanced understanding recognizes that:
 
 1. **Consistency exists on a spectrum** from strong consistency to eventual consistency, with many gradations between
 2. **Availability is not binary** but exists in degrees measured by metrics like uptime percentages and response time distributions
@@ -28,7 +28,7 @@ This gradient-based understanding enables more sophisticated architectural decis
 
 A key insight of AD4S is that architectural choices don't eliminate risk—they redistribute it. When you choose a particular balance of CAP properties, you're deciding where to accept vulnerability and where to ensure guarantees.
 
-For example, choosing consistency over availability means accepting the risk of temporary service interruptions to ensure data integrity. Conversely, prioritizing availability over consistency means accepting the risk of working with potentially stale data to ensure continuous operation.
+For example, choosing consistency over availability means accepting the risk of temporary service interruptions to ensure data integrity. Conversely, prioritizing availability over consistency means accepting the risk of working with potentially stale data to ensure continuous operation. Anyone who has posted to a social media application, only for it to 'disappear' until moments (or minutes) later has seen this compromise in real time.
 
 AD4S provides frameworks for making these trade-offs explicit, documenting them, and communicating them to stakeholders. This clarity ensures that risk is deliberately distributed rather than accidentally accumulated in unexpected places.
 
@@ -56,14 +56,18 @@ This focus on adaptable instrumentation ensures that operations teams maintain v
 
 ## Fault and Resource Isolation
 
-Antifragile systems contain failures rather than amplifying them. Techniques for fault isolation include:
+Antifragile systems contain failures rather than amplifying them. Netflix deserves significant recognition for advancing this thinking through their groundbreaking Chaos Monkey approach—deliberately introducing failures into production systems to uncover weaknesses and build resilience. This revolutionary practice, later extended into the broader Simian Army and eventually influencing AWS's Fault Injection Simulator, fundamentally changed how the industry approaches system reliability.
 
-- **Bulkheads**: Separating components to contain failures
+Netflix's work eventually inspired similar approaches across the industry, including the development of policy management tools like Polly that bring systematic resilience policies into modern technology stacks. These innovations represent antifragility in its purest form: systems that actively learn and strengthen through exposure to controlled stress.
+
+Building on these foundations, several key patterns have emerged for fault isolation:
+
+- **Bulkheads**: Separating components to contain failures, preventing "noisy neighbor" effects
 - **Circuit breakers**: Preventing cascading failures when dependencies become unavailable
-- **Timeouts and deadlines**: Ensuring operations don't hang indefinitely
-- **Resource quotas**: Limiting consumption to prevent resource exhaustion
+- **Timeouts and deadlines**: Ensuring operations don't hang indefinitely, maintaining system responsiveness
+- **Resource quotas**: Limiting consumption to prevent resource exhaustion from compromising the entire system
 
-These patterns create boundaries within the system that prevent localized issues from becoming system-wide failures.
+These patterns create boundaries within the system that prevent localized issues from becoming system-wide failures. They embody the essence of antifragile design—not just surviving stress, but becoming stronger through exposure to it.
 
 ## Conclusion: Embracing the Gradient
 
