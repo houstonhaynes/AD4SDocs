@@ -575,7 +575,7 @@ The combination of the AD4S Ledger and AI augmentation creates a force multiplie
 
 5. **Continuous Learning**: The organization develops a systematic capability to learn from its experiences, creating a virtuous cycle of improvement that persists through workforce transitions.
 
-6. **Succession Planning**: The knowledge infrastructure provides a safety net for leadership transitions, preserving strategic context and decision rationales across organizational changes.
+6. **Succession Planning**: The knowledge infrastructure provides a safety net for contributor and leadership transitions, preserving strategic context and decision rationales across organizational changes.
 
 These capabilities aren't just nice-to-have productivity enhancers—they're mission-critical defenses against the fundamental reality that software systems consistently outlive the tenure of their creators. The AD4S Ledger becomes a load-bearing structure for organizational continuity in an era where the only constant is change.
 
