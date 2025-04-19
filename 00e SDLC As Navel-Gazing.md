@@ -42,19 +42,25 @@ Most Agile methodologies identify "the customer" or "the user" as the primary st
 
 ### Feedback Loop Constraints
 
-Agile values feedback, but primarily focuses on feedback that can be quickly obtained and incorporated. This creates blind spots around impacts that emerge gradually, affect parties not included in feedback loops, or manifest only at scale or over time.
+Agile values feedback, but primarily focuses on feedback that can be quickly obtained and incorporated. This creates blind spots around impacts that emerge gradually, impacting parties not included in feedback loops, or manifesting only at scale or over time.
 
 ### Skill and Power Imbalances
 
-The effectiveness of Agile methodologies depends heavily on the skills, experience, and influence of team members. These approaches often lack mechanisms to address power imbalances, skill gaps, or organizational dysfunctions that can undermine their principles.
+Where Agile methodologies often struggle with the uneven distribution of skills, experience, and organizational influence, AD4S directly addresses these imbalances through structured knowledge capture and transparent decision frameworks. The AD4S Ledger transforms team dynamics by making implicit knowledge explicit and contextual, allowing contribution based on insight rather than authority or seniority alone.
+
+By documenting decision contexts, constraints, and alternatives considered, the framework creates a mechanism for meaningful participation regardless of hierarchical position. Junior team members can contribute unique perspectives by referencing captured patterns, while experienced practitioners' wisdom becomes accessible beyond their immediate sphere of influence. This democratization of knowledge doesn't erase skill differences—it leverages them as complementary strengths while preventing them from becoming barriers to sound decision-making.
+
+The framework's emphasis on temporal knowledge graphs further mitigates the impact of inevitable team transitions, ensuring that new team members can easily fill critical gaps in understanding. This approach builds organizational resilience to help everyone "level up" when confronted with a new sub-domain.
 
 ## Being Reactive is Not Enough
 
-The Reactive Manifesto makes progress over traditional Agile patterns and practices but still suffers from a form of navel-gazing. Its self-concern imbues an unhealthy projection onto a system's users which in effect is an abdication of responsibility. 
+The Reactive Manifesto makes progress over traditional Agile patterns and practices but still suffers from a form of navel-gazing. Its self-concern imbues an unhealthy projection onto a system's users which in effect is an abdication of responsibility.
 
-It naively creates a tautological loop where it only responds to directed input—and fails to take any notice of larger contextual boundaries in which the system *should* (and in certain legal contexts, must) operate. This includes governance and compliance, privacy, ethics, accessibility, inclusion, and sustainability. 
+It naively creates a tautological loop where it only responds to directed input—and fails to take any notice of larger contextual boundaries in which the system *should* (and in certain legal contexts, must) operate. This includes governance and compliance, privacy, ethics, accessibility and sustainability.
 
 The Reactive approach assumes there will be no contention between competing interests of users (and system managers) and therefore makes no attempt to be the arbiter of where and how certain compromises are to be made. It also assumes there's no potential for misuse or abuse, which is a very dangerous assumption. What if business managers or marketing teams ask engineers to change the system to behave in ways that are illegal or unethical? The Reactive approach has a tacit assumption that if constituencies don't specifically *ask* for these things to be considered, there's no need to address broader systemic concerns.
+
+These blind spots, whether through naivete or by design, are a huge reputational, legal and ultimately business risk that are too important to be left to the whims of individual curators.
 
 ## Toward an Outward-Focused Approach
 
@@ -82,6 +88,6 @@ Emphasizing the ability to adapt to changing circumstances rather than rigid adh
 
 ## Conclusion: Beyond Navel-gazing
 
-The limitations of traditional SDLC approaches don't negate their value or suggest they should be abandoned. Rather, AD4S proposes supplementing these methodologies with broader perspectives and concerns that address their blind spots.
+The limitations of traditional SDLC approaches don't negate their value or suggest they should be abandoned. Rather, AD4S proposes plugging into these methodologies with broader perspectives and concerns that address their blind spots.
 
 By recognizing the inward focus that characterizes many development methodologies and deliberately expanding our view to include wider contexts and longer time horizons, we can create systems that not only meet immediate needs but also function responsibly within their larger ecosystems. This outward focus represents a necessary evolution in how we approach software development in an age where digital systems increasingly mediate critical aspects of human experience.
