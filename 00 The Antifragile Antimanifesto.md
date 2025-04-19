@@ -52,7 +52,7 @@ Rather than seeking simple answers in manifestos, we need a rubric to help us as
 
 The Antifragile Design for Systems doesn't offer easy answers or catchy slogans. It doesn't promise to eliminate complexity or guarantee success. What it does offer is a framework for navigating complexity that acknowledges the messy reality of software development.
 
-At its core, AD4S recognizes that our systems exist within an ecosystem of competing forces, organizational structures, and evolving requirements. It embraces this reality rather than trying to simplify it away. It seeks to build systems that actually benefit from volatility, randomness, and stress—systems that are antifragile rather than merely robust.
+At its core, AD4S recognizes that our systems exist within an ecosystem of competing forces, organizational structures, and evolving requirements. It embraces this reality rather than trying to simplify it away. It seeks to build systems that actually benefit from volatility, randomness, and stress.
 
 Key to this approach is the rejection of binary thinking. The AD4S framework recognizes that most engineering decisions exist in a highly dimensional space, not as either/or choices. It embraces gradient thinking, where solutions balance multiple competing vectors based on the specific context and needs.
 
