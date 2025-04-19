@@ -78,4 +78,4 @@ Far from being a constraint on innovation or a drain on resources, ethical consi
 - Attract and retain values-aligned talent
 - Develop more inclusive products with broader appeal
 
-AD4S provides frameworks for incorporating ethical considerations throughout the software development lifecycle, ensuring that these concerns are addressed systematically rather than haphazardly. By treating ethics as a business essential rather than an optional add-on, organizations create more sustainable products and services while reducing their exposure to reputation risks and regulatory sanctions.
+AD4S provides frameworks for incorporating ethical considerations throughout the software development lifecycle, ensuring that these concerns are addressed systematically rather than haphazardly. By treating ethics as a business essential rather than a nice-to-have, organizations create more sustainable products and services while reducing their exposure to reputation risks and regulatory sanctions.
