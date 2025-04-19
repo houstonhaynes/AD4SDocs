@@ -393,7 +393,62 @@ A new team member needs to understand a complex system quickly. Using the AD4S L
 
 This temporal understanding helps new team members develop deeper insight than static documentation alone could provide.
 
-## Knowledge Preservation and AI Augmentation
+## Structural Influences: Integrating Proven Visualization Approaches
+
+The AD4S Ledger's design draws on established visualization paradigms that have proven effective in helping organizations understand complex systems. Two particularly influential approaches are the C4 Model and the Milky Way Model—each offering valuable perspectives that inform how the temporal knowledge graph can be structured and visualized.
+
+### The C4 Model: Hierarchical Abstraction for Technical Understanding
+
+Simon Brown's C4 Model provides a hierarchical approach to software architecture documentation that aligns perfectly with the AD4S Ledger's need to represent systems at multiple levels of abstraction. The C4 Model uses four levels of diagrams to represent software architecture:
+
+1. **Context**: The highest level, showing how a system fits into the world around it
+2. **Container**: The next level down, showing the high-level technical building blocks
+3. **Component**: A deeper view of individual containers, revealing their internal components
+4. **Code**: The lowest level, diving into how components are implemented
+
+This hierarchical approach offers several benefits for the AD4S Ledger:
+
+- **Audience-Appropriate Detail**: Different stakeholders need different levels of detail, just as the C4 model tailors each level to specific audiences
+- **Navigable Complexity**: The ability to zoom in and out helps manage complexity without overwhelming viewers
+- **Consistent Vocabulary**: The clear definitions of system, container, component, and code create a shared language for discussing architecture
+
+The AD4S Ledger incorporates this hierarchical thinking by organizing decision records, tension maps, and risk assessments to support multiple levels of abstraction. Users can navigate from high-level strategic decisions down to detailed implementation choices, maintaining the context relationships between levels.
+
+### The Milky Way Model: Visualizing Value Flow and Business Capabilities
+
+While the C4 Model excels at representing technical architecture, Annika Klyver's Milky Way Model offers a complementary approach focused on visualizing business capabilities and value flows. The Milky Way Model places the organization at the center and arranges capabilities, processes, and systems in concentric rings that show how they support value creation.
+
+This radial arrangement provides several key insights that influence the AD4S Ledger:
+
+- **Value-Centric Visualization**: Placing value flows at the center focuses attention on how different elements contribute to value creation
+- **Holistic Perspective**: The model naturally incorporates both business and technical elements in a single view
+- **Relationship Mapping**: The placement of elements shows their relationships to value streams and to each other
+- **Cross-Domain Visibility**: Business capabilities, processes, and systems all appear in the same visualization, helping bridge silos
+
+The AD4S Ledger incorporates the Milky Way approach by ensuring that technical decisions are always connected to value creation, and by providing visualizations that show how different elements—from strategic goals to technical components—align to support the organization's purpose.
+
+### Synthesizing Approaches in the AD4S Ledger
+
+The AD4S Ledger doesn't simply adopt either model wholesale but synthesizes their strengths while adding the crucial temporal dimension:
+
+- **Hierarchical Detail with Value Context**: Technical elements are organized hierarchically (following C4) while maintaining clear connections to value streams (following Milky Way)
+- **Multiple Visualization Perspectives**: The ledger can be viewed through both C4-style hierarchical diagrams and Milky Way-style value-centered maps
+- **Temporal Evolution**: Unlike both models, the AD4S Ledger adds the dimension of time, showing how elements and their relationships have evolved
+- **Knowledge Graph Foundation**: The underlying graph structure allows flexible navigation between different visualization approaches
+
+This synthesis creates a powerful combination: the technical clarity of C4, the business relevance of Milky Way, and the historical context of the temporal knowledge graph. Organizations can choose the visualization that best serves their current needs while maintaining the connections between all perspectives.
+
+### Practical Implementation Across Domains
+
+The combination of these approaches allows the AD4S Ledger to serve diverse needs across the organization:
+
+- **For Technical Teams**: C4-style hierarchical views show system architecture with clear boundaries and relationships
+- **For Business Stakeholders**: Milky Way-style value-centered views connect technical elements to business capabilities
+- **For Leadership**: High-level views of both perspectives, with the ability to assess how systems support value creation
+- **For New Team Members**: The ability to explore from either business or technical starting points helps build understanding
+- **For Governance**: The temporal dimension shows how decisions and structures have evolved over time
+
+By incorporating these established visualization approaches while adding the temporal dimension, the AD4S Ledger creates a uniquely powerful tool for understanding and managing complex systems across their entire lifecycle.
 
 The value of the AD4S Ledger extends far beyond documentation and decision support. As a structured temporal knowledge graph, it creates the foundation for AI-augmented engineering that can preserve and amplify organizational wisdom—a capability that will become increasingly critical as demographic shifts reshape the workforce.
 
