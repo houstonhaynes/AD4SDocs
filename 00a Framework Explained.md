@@ -61,10 +61,3 @@ The concepts outlined here represent the beginning of what we hope will become a
 In the linked sections, you'll find more detailed explorations of specific aspects of the AD4S framework, from practical applications to philosophical underpinnings. These are living documents that will evolve as the community engages with them.
 
 Your input is not just welcome—it's essential to making AD4S a truly useful framework for addressing the complex challenges we face in modern software development.
-
-[Best Practices vs. Good Practice →](/ad4s-best-practices)  
-[CAP Theorem on a Gradient →](/ad4s-cap-theorem)  
-[Ethics as Business Essential →](/ad4s-ethics-essentials)  
-[SDLC as Navel-gazing →](/ad4s-limits-of-sdlc)  
-[The 'So What' Factor →](/ad4s-the-so-what-factor)  
-[Next Steps →](/ad4s-whats-next)
