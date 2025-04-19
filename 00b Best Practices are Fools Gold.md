@@ -32,7 +32,7 @@ Not all complexity is created equal. AD4S distinguishes between three types:
 
 Understanding these distinctions allows teams to focus simplification efforts where they'll have greatest impact—reducing accidental and incidental complexity while developing strategies to manage the essential.
 
-## GxP Approach: Good Practice over Best Practice
+## GxP Approach: Dimensions in Good Practice over Monolithic 'Best Practice'
 
 Regulated industries in the life sciences sector use the concept of Good Practice (GxP) rather than claiming universal "best" practices. This subtle distinction acknowledges that practices must be appropriate to context and continuously evolving. The "x" in GxP stands as a variable—replaced by different letters depending on the specific application: GMP (manufacturing), GLP (laboratory), GCP (clinical), and GDP (distribution). Each variant maintains core principles while adapting to its domain's unique requirements and constraints.
 
