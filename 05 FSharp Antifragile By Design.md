@@ -10,7 +10,7 @@ This article examines F#'s journey through the lens of antifragile design princi
 
 F# began its life in 2002 when Don Syme at Microsoft Research Cambridge set out to bring functional programming principles to the .NET ecosystem. Rather than creating an entirely new language, Syme made the strategic decision to base F# on OCaml, an established functional language with proven foundations in type theory.
 
-This decision embodied the first principle of antifragile design: building on well established foundations while maintaining optionality for novel exploration. By adopting OCaml's syntax and type system, F# inherited decades of research in programming language theory. Yet by integrating with .NET, it gained immediate access to a vast ecosystem of libraries and tools.
+This decision embodied the first principle of antifragile design: building on well established foundations while maintaining optionality for novel exploration. By adopting OCaml's syntax and type system, F# inherited decades of research in programming language theory. And by integrating with .NET, it gained a new landscape of opportunities which led to a vast ecosystem of libraries and tools.
 
 The hybrid nature of F# was revolutionary. As a functional-first language with full access to an object-oriented ecosystem, F# occupied a unique position that allowed it to bridge paradigms rather than forcing developers to choose between them. This boundary-spanning quality would become a defining feature of F#'s antifragility.
 
