@@ -111,7 +111,7 @@ let validateUser input = validate {
 }
 ```
 
-This extensibility mechanism represents the antifragile principle of convex tinkering—creating small, controlled experiments with limited downside but potentially significant upside. Developers can create new computational expressions to explore novel programming patterns without requiring changes to the language itself.
+This extensibility mechanism represents the antifragile principle of convex tinkering—creating small, controlled experiments with limited downside but potentially significant upside. 
 
 ### Units of Measure: Zero-Cost Type Safety
 
@@ -135,7 +135,8 @@ let force = mass * gravity  // Type: float<N>
 This feature demonstrates how F# embodies the barbell strategy of antifragile design—combining extreme safety (static typing of physical dimensions) with high performance (zero runtime overhead). The compiler enforces correctness, but the generated code is as efficient as if no checks were performed.
 
 This innovation has influenced:
-- **Rust**: Libraries like `uom` and discussions of first-class support
+
+- **Rust**: Libraries like `uom` and their discussions of first-class support
 - **Swift**: Measurement types in Foundation
 - **C++**: Dimensional analysis libraries
 - **Python**: Libraries like Pint
@@ -173,27 +174,32 @@ Perhaps most importantly, Fable demonstrated that F#'s fundamental design was pl
 Perhaps the most compelling evidence of F#'s antifragile nature is its outsized influence on other programming languages relative to its market share. This timeline traces how F#'s innovations have propagated throughout the industry, demonstrating its role as a catalyst for broader language evolution:
 
 ### 2001-2005: The Foundation Years
+
 - Don Syme develops .NET generics, which become fundamental to C# 2.0
 - Early F# designs influence C# 3.0 features including LINQ
 
 ### 2007-2010: The Async Revolution
+
 - F# introduces async workflows (2007)
 - The Reactive Extensions (Rx) project is directly influenced by F#'s event handling
 - C# team begins discussion of async/await based on F#'s model
 
 ### 2010-2015: Functional Goes Mainstream
+
 - C# 5.0 adds async/await (2012), explicitly influenced by F#
 - F# type providers demonstrate a new approach to type-safe data access
 - Swift launches (2014) with numerous F#-influenced features
 - TypeScript development accelerates, influenced by F# type system concepts
 
 ### 2015-2020: The Pattern Matching Era
+
 - C# 7.0 adds pattern matching and tuples (2017), directly influenced by F#
 - C# 8.0 enhances pattern matching further (2019)
 - JavaScript proposes pattern matching with F# influence
 - Rust 1.0 launches with features influenced by ML-family languages including F#
 
 ### 2020-Present: Convergent Evolution
+
 - C# 9.0 adds non-null as default, following F#'s lead
 - Most major languages now include async/await patterns
 - Pipeline operators continue to spread to more languages
@@ -201,7 +207,7 @@ Perhaps the most compelling evidence of F#'s antifragile nature is its outsized 
 
 ## The Fidelity Framework: Beyond Runtime Boundaries
 
-The most recent evolution in F#'s antifragile journey is the Fidelity Framework, which takes F#'s adaptability to unprecedented levels. While Fable brought F# to the browser, Fidelity takes F# "to the metal," enabling direct compilation to native code across the entire computing spectrum—from microcontrollers to cloud servers.
+The most recent evolution in F#'s antifragile journey is the Fidelity Framework, which takes F#'s adaptability to unprecedented levels. While Fable brought F# to the browser, Fidelity takes F# "to the metal," enabling direct compilation to native code across the entire computing spectrum—from microcontrollers to cloud servers. The adaptation of F# to MLIR through a straightforward translation layer is a testament to both systems carrying their own deep antifragile principals into real world utility.
 
 ### Transcending Runtime Limitations
 
@@ -304,11 +310,11 @@ let supervisorLoop components =
     loop initialComponents
 ```
 
-This approach enables F# code to run in environments previously exclusive to languages like C, while maintaining much stronger safety guarantees and fault tolerance.
+This approach enables F# code to run with extreme efficiency in environments previously exclusive to languages like C, while maintaining much stronger safety guarantees and fault tolerance.
 
 ### BAREWire: Advanced Type-Safe Communication Protocol
 
-A critical component of this system is BAREWire, a patent-pending implementation of the BARE protocol that includes zero-copy memory management as well as fully type-safe inter-process and network communications:
+A critical component of this system is BAREWire, SpeakEZ's (the primary architects of the Fidelity Framework) patent-pending implementation of the BARE protocol that includes zero-copy memory management as well as fully type-safe inter-process and network communications:
 
 ```fsharp
 // Define memory layout matching hardware requirements
@@ -338,11 +344,11 @@ let processModelWeights (buffer: AlignedBuffer<BitNetWeight>) =
        <br>_ -> CPUOperations.vectorizedPopcount(weight.binary)
 ```
 
-BAREWire enables F# code to directly manipulate memory in ways that are optimized for each hardware target, eliminating the performance penalties typically associated with managed languages in AI workloads.
+BAREWire enables F# code to directly manipulate memory in ways that are optimized for each hardware target, eliminating the performance penalties typically associated with managed languages in AI workloads. It completely eliminates "runtime bloat" and allows marshaling of communication and memory mapping between CPU and GPU resources at the speed of the systems memory bus.
 
 ## Advanced BitNet Deployments: Antifragility for AI in 2025 and Beyond
 
-The latest evolution in F#'s antifragile journey is their research that shows how foundational design decisions continue to yield unexpected benefits as computing paradigms shift. SpeakEZ's groundbreaking work with the Fidelity Framework demonstrates how F#'s type system—particularly its unique Units of Measure feature—has enabled a revolutionary approach to deploying efficient AI models across the entire computing spectrum.
+The latest evolution in F#'s antifragile journey is SpeakEZ's continuing research - design elements that continue to yield unexpected benefits as computing paradigms shift. SpeakEZ's groundbreaking work with the Fidelity Framework demonstrates how F#'s type system—particularly its unique Units of Measure feature—has enabled a revolutionary approach to deploying efficient AI models across the entire computing spectrum.
 
 ### Multi-Target BitNet Deployments
 
@@ -419,7 +425,7 @@ let asicConfig =
         PlatformConfig.base'
 ```
 
-This future state would enable developers to compile and deploy the substantially similar F# BitNet code to radically different hardware targets without changing the core logic. While current work is adapting to current hybrid approaches, SpeakEZ's work in this area focuses on a strata of platform code that would automatically adapt memory management and code optimization strategies based on a declarative target platform configuration.
+This future state would enable developers to compile and deploy substantially similar F# BitNet code to radically different hardware targets without changing the core logic. While current work is adapting to existing hybrid approaches, SpeakEZ's work in this area focuses on a strata of platform code that would automatically adapt memory management and code optimization strategies based on a declarative target platform configuration. This could herald a new era, creating previously unexpressed degrees of freedom for deploying robust heterogenous workloads, and laying basis for more groundbreaking efficiency as the new AI landscape continues to take shape.
 
 What's crucial to understand is that while Fidelity takes a practical hybrid approach by leveraging existing technologies like .NET tooling and platform-specific compilers, this future state of true hardware independence is only achievable because of F#'s fundamental design principles. The language's layered separation of concerns—from its type system to its effect management to its computation expressions—creates what could be called "progressive optionality." Each layer maintains independence while preserving the ability to specialize at later stages.
 
@@ -469,15 +475,15 @@ While there's always a system-dependent demand for knowledge of a given device o
 
 ## Conclusion: F# as the Nexus of Antifragile Design
 
-As we reflect on F#'s remarkable journey, its enterprise-grade reliability—firmly established through its deep integration with the mature .NET ecosystem—stands as a testament to its practical foundations. Yet F# has never been content to rest on these foundations alone. The Fable compiler demonstrated that F# could tackle modern web development with equal aplomb, bringing its powerful type system and functional elegance to JavaScript environments. Now, the Fidelity Framework emerges as the third pillar in this triumvirate, borrowing strengths from both previous approaches while forging bold new territory for the AI-driven landscape of tomorrow. What's truly extraordinary is that Don Syme's early design decisions, made over two decades ago in a Microsoft Research lab, have generated what can only be described as "gravitational waves" that continue to ripple through our technological universe—influencing languages, frameworks, and paradigms far beyond what anyone could have predicted. These careful, principled choices have created not just a language, but a movement that continues to expand its reach and relevance with each technological shift.
+As we reflect on F#'s remarkable journey, its enterprise-grade reliability—firmly established through its deep integration with the mature .NET ecosystem—stands as a testament to its practical foundations. Yet F# has never been content to rest on these foundations alone. The Fable compiler demonstrated that F# could tackle modern web development with equal aplomb, bringing its powerful type system and functional elegance to JavaScript environments and beyond. Now, the Fidelity Framework emerges as the third pillar in this triumvirate, borrowing strengths from both previous approaches while forging bold new territory for the AI-driven landscape of tomorrow. What's truly extraordinary is that Don Syme's early design decisions, made over two decades ago in a Microsoft Research lab, have generated what can only be described as "gravitational waves" that continue to ripple through our technological universe—influencing languages, frameworks, and paradigms far beyond what anyone could have predicted. These careful, principled choices have created not just a language, but a movement that continues to expand its reach and relevance with each technological shift.
 
 F# stands as a remarkable example of antifragile design in programming languages—not merely surviving but thriving amid two decades of rapid technological change. From its origins as "OCaml for .NET" to its current position spanning multiple compilation targets and computing environments, F# has demonstrated the key qualities of antifragile systems:
 
-1. **Optionality**: Multiple compilation targets and deployment environments
+1. **Optionality**: Multiple compilation targets and deployment choices
 2. **Barbell Strategy**: Combining high-level safety with low-level performance
 3. **Via Negativa**: Simplifying through composition and principled design
 4. **Skin in the Game**: Community-driven innovation addressing real-world needs
-5. **Convex Tinkering**: Controlled experimentation with features like computation expressions
+5. **Convex Tinkering**: Controlled experimentation showing minimal risk for outsized reward
 
 What makes F# particularly notable is that these antifragile qualities weren't retrofitted—they were present from day one in its fundamental design. Don Syme's vision of a functional-first language that could operate seamlessly in a predominantly object-oriented ecosystem established a foundation of adaptability that has enabled F# to evolve in ways that would have been difficult to predict at its inception.
 
