@@ -58,9 +58,9 @@ This focus on adaptable instrumentation ensures that operations teams maintain v
 
 Antifragile systems contain failures rather than amplifying them. Netflix deserves significant recognition for advancing this thinking through their groundbreaking Chaos Monkey approach—deliberately introducing failures into production systems to uncover weaknesses and build resilience. This revolutionary practice, later extended into the broader Simian Army and eventually influencing AWS's Fault Injection Simulator, fundamentally changed how the industry approaches system reliability.
 
-Netflix's work eventually inspired similar approaches across the industry, including the development of policy management tools like Polly that bring systematic resilience policies into modern technology stacks. These innovations represent antifragility in its purest form: systems that actively learn and strengthen through exposure to controlled stress.
+Similar approaches have proliferated across the industry, including the development of "Simmy" chaos simulators and policy management tools like Polly that bring systematic resilience policies into modern technology stacks. These innovations represent antifragility in its purest form: systems that actively learn and strengthen through exposure to controlled stress.
 
-Building on these foundations, several key patterns have emerged for fault isolation:
+Building on these insights, several key patterns have emerged for fault isolation:
 
 - **Bulkheads**: Separating components to contain failures, preventing "noisy neighbor" effects
 - **Circuit breakers**: Preventing cascading failures when dependencies become unavailable
