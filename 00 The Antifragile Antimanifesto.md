@@ -1,11 +1,3 @@
-Let me first search for more information about the "Accidents and Essence" essay from the 80s to ensure I incorporate it properly in the antimanifesto.
-
-Now I'll search for information about Conway's Law and Moore's Law to complete my research for the antimanifesto.
-
-Let me look up one more topic - the current state of Moore's Law:
-
-Based on my research, I'll now write "The Antifragile Antimanifesto" as an opinion piece that critiques the platitudes of software manifestos while incorporating the ideas from our discussions on AD4S, Fred Brooks' "No Silver Bullet" essay, Conway's Law, and the current state of Moore's Law.
-
 # The Antifragile Antimanifesto: Why Platitudes Don't Move the Needle
 
 In an industry enamored with manifestos and their pithy one-liners, the time has come for a pointed rejection of the platitude-driven approach to software development. As we navigate the increasing complexity of modern systems, four-line declarations of what we "value over" what else no longer suffice—if they ever did. This is not another manifesto. It's an antimanifesto, a call to embrace the messy reality of software development rather than reducing it to bumper-sticker philosophy.
