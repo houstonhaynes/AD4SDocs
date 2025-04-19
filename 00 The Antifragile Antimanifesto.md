@@ -60,9 +60,9 @@ The AD4S Ledger exemplifies this approach by capturing not just what decisions w
 
 ## A Call to Embrace the Complex
 
-This antimanifesto is not a rejection of the values that previous manifestos sought to promote. It's a recognition that those values cannot be reduced to bumper-sticker philosophy without losing their essence. It's an acknowledgment that real progress comes not from platitudes but from engaging deeply with the complex reality of software development.
+This antimanifesto is not a rejection of the values that previous manifestos sought to promote. It's a recognition that those values cannot be reduced to bumper-sticker philosophy without losing their essence. It's an acknowledgment that real progress comes not from clever slogans but from engaging deeply with the complex reality of software development.
 
-In a time when a think tank can easily churn out another set of platitudes, the real challenge lies in developing frameworks that help us navigate complexity rather than pretending it doesn't exist. The AD4S approach represents one such framework—not a silver bullet, but a set of tools and concepts for building genuinely antifragile systems.
+In a time when a think tank can easily churn out another word salad slide deck, the real challenge lies in developing frameworks that help us navigate complexity rather than pretending it doesn't exist. The AD4S approach represents one such framework—not a silver bullet, but a set of tools and concepts for building genuinely antifragile systems.
 
 As we move further into an era where Conway's Law exerts ever more influence while Moore's Law fades, we need approaches that acknowledge organizational and human factors as central to software engineering, not peripheral. We need frameworks that treat software not as an isolated technical artifact but as a socio-technical system embedded in a complex web of relationships.
 
