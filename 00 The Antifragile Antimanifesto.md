@@ -8,7 +8,7 @@ The Agile Manifesto emerged in 2001 during a particular moment in software histo
 
 Two decades later, these once-revolutionary statements have ossified into dogma, repeated with reverence but often implemented without understanding. The Agile Manifesto now serves as a corporate checkbox, a credential to display rather than a philosophy to embody. Teams "do Agile" without being agile, checking all the ceremonial boxes while missing the essence.
 
-Later came the Reactive Manifesto, another attempt to distill complex technical challenges into tweetable declarations. It claimed to address the needs of modern systems with its focus on responsiveness, resilience, elasticity, and message-driven architectures. Yet even here, the simplification of the complex led to a dangerous slipper slope of reductionist thinking.
+Later came the Reactive Manifesto, another attempt to distill complex technical challenges into tweetable declarations. It claimed to address the needs of modern systems with its focus on responsiveness, resilience, elasticity, and message-driven architectures. Yet even here, the simplification of the complex led to a dangerous slippery slope of reductionist thinking.
 
 Let's be empathetic for a moment. The intentions behind these manifestos were pure. Their authors genuinely sought to improve how we build software. But good intentions aren't enough when addressing serious problems. By reducing nuanced trade-offs to binary preferences, manifestos inadvertently strip away the context that makes engineering decisions meaningful. They promote an illusion of clarity in a field defined by ambiguity and outright contradictions that beg considered resolution.
 
