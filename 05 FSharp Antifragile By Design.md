@@ -98,8 +98,8 @@ F#'s computation expressions provide a framework for creating domain-specific su
 type ValidationBuilder() =
     member _.Bind(result, f) =
         match result with
-        | Ok value -> f value
-        | Error e -> Error e
+       <br>Ok value -> f value
+       <br>Error e -> Error e
     member _.Return(value) = Ok value
 
 let validate = ValidationBuilder()
@@ -279,14 +279,14 @@ Taking inspiration from Erlang's robust "let it fail" actor model, Fidelity enab
 ```fsharp
 // Supervisor pattern for hardware component management
 type ComponentResult<'T> = 
-    | Success of 'T 
-    | Failure of string
+   <br>Success of 'T 
+   <br>Failure of string
 
 // Supervisor that monitors hardware components
 let supervisorLoop components =
     let rec loop runningComponents =
         match waitForNextEvent() with
-        | ComponentFailure(id, reason) ->
+       <br>ComponentFailure(id, reason) ->
             // Isolate failure to just this component
             let newComponents = 
                 Map.change id (fun comp -> 
@@ -301,7 +301,7 @@ let supervisorLoop components =
             else alertSystemFailure(id, reason)
             
             loop newComponents
-        | _ -> loop runningComponents
+       <br>_ -> loop runningComponents
         
     loop initialComponents
 ```
@@ -335,9 +335,9 @@ let processModelWeights (buffer: AlignedBuffer<BitNetWeight>) =
         
         // Specialized hardware operations on binary weights
         match currentPlatform with
-        | ASIC -> ASICOperations.xnorPopcount(weight.binary)
-        | GPU -> GPUOperations.parallelPopcount(weight.binary)
-        | _ -> CPUOperations.vectorizedPopcount(weight.binary)
+       <br>ASIC -> ASICOperations.xnorPopcount(weight.binary)
+       <br>GPU -> GPUOperations.parallelPopcount(weight.binary)
+       <br>_ -> CPUOperations.vectorizedPopcount(weight.binary)
 ```
 
 BAREWire enables F# code to directly manipulate memory in ways that are optimized for each hardware target, eliminating the performance penalties typically associated with managed languages in AI workloads.
@@ -458,10 +458,10 @@ type BitNetOrchestrator(configs: Map<PlatformType, PlatformConfig>) =
         let! routingResult = router.Ask(Process(input, None))
         
         match routingResult with
-        | Success domain ->
+       <br>Success domain ->
             // Forward to appropriate specialist based on routing
             return! specialists.[ModelType.Specialist domain].Ask(Process(input, None))
-        | Failure error ->
+       <br>Failure error ->
             // Handle routing failure
             return Failure $"Routing failed: {error}"
     }

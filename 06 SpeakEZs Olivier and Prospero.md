@@ -16,10 +16,10 @@ The current machine learning ecosystem has been dominated by a single approach: 
 %%{init: {'theme': 'dark', 'themeVariables': { 'primaryColor': '#242424', 'primaryTextColor': '#fff', 'primaryBorderColor': '#888', 'lineColor': '#d3d3d3', 'secondaryColor': '#2b2b2b', 'tertiaryColor': '#333' }}}%%
 flowchart TD
     subgraph Monolithic["Monolithic ML Approach (Fragile)"]
-        PyTorch["Single Framework | (PyTorch/TensorFlow)"]
-        CUDA["Single Accelerator Type | (NVIDIA GPUs)"]
-        Data["Massive Datasets | (Increasing Size)"]
-        Single["Single Model Architecture | (Transformer)"]
+        PyTorch["Single Framework<br>(PyTorch/TensorFlow)"]
+        CUDA["Single Accelerator Type<br>(NVIDIA GPUs)"]
+        Data["Massive Datasets<br>(Increasing Size)"]
+        Single["Single Model Architecture<br>(Transformer)"]
         
         PyTorch --> CUDA
         CUDA --> Data
@@ -144,13 +144,13 @@ The AI hardware landscape is rapidly diversifying beyond NVIDIA GPUs:
 %%{init: {'theme': 'dark', 'themeVariables': { 'primaryColor': '#242424', 'primaryTextColor': '#fff', 'primaryBorderColor': '#888', 'lineColor': '#d3d3d3', 'secondaryColor': '#2b2b2b', 'tertiaryColor': '#333' }}}%%
 flowchart LR
     subgraph Accelerators["Diverse AI Accelerators"]
-        NVIDIA["NVIDIA GPUs | CUDA/Tensor Cores"]
-        AMD["AMD GPUs | ROCm/Matrix Cores"]
-        Intel["Intel | Xe Matrix Extensions"]
-        Google["Google TPUs | Matrix Multiplier Units"]
-        Tenstorrent["Tenstorrent | Tensix Cores"]
-        Cerebras["Cerebras | Wafer Scale Engine"]
-        Custom["Custom ASICs | Application-Specific"]
+        NVIDIA["NVIDIA GPUs<br>CUDA/Tensor Cores"]
+        AMD["AMD GPUs<br>ROCm/Matrix Cores"]
+        Intel["Intel<br>Xe Matrix Extensions"]
+        Google["Google TPUs<br>Matrix Multiplier Units"]
+        Tenstorrent["Tenstorrent<br>Tensix Cores"]
+        Cerebras["Cerebras<br>Wafer Scale Engine"]
+        Custom["Custom ASICs<br>Application-Specific"]
     end
     
     subgraph Characteristics["Key Differentiators"]
@@ -213,8 +213,8 @@ graph LR
     Shift --> Inference
     
     subgraph HardwareNeeds["Changing Hardware Requirements"]
-        TrainGPU["Training: High Memory Bandwidth | Massive Parallelism"]
-        InferenceNeeds["Test-Time: Low Latency | Dynamic Scheduling | Memory Efficiency"]
+        TrainGPU["Training: High Memory Bandwidth<br>Massive Parallelism"]
+        InferenceNeeds["Test-Time: Low Latency<br>Dynamic Scheduling<br>Memory Efficiency"]
     end
     
     Training -.-> TrainGPU
@@ -372,19 +372,19 @@ module BitNet =
         
         // Hardware-specific implementations
         match Platform.current with
-        | Platform.CUDA ->
+       <br>Platform.CUDA ->
             // CUDA XNOR-popcount implementation
             CUDAKernels.xnorPopcountMM (UMX.untag input) (UMX.untag weights)
             
-        | Platform.CPU ->
+       <br>Platform.CPU ->
             // Vectorized CPU implementation with SIMD intrinsics
             CPUKernels.vectorizedXnorMM (UMX.untag input) (UMX.untag weights)
             
-        | Platform.Tenstorrent ->
+       <br>Platform.Tenstorrent ->
             // Tenstorrent-specific implementation using native binary ops
             TensixKernels.binaryMatmul (UMX.untag input) (UMX.untag weights)
             
-        | _ ->
+       <br>_ ->
             // Fallback implementation for any hardware
             let xnor = Tensor.mul (UMX.untag input) (UMX.untag weights)
             let popcount = Tensor.sum xnor -1
@@ -431,10 +431,10 @@ SpeakEZ's adoption of the Olivier actor model for BitNet Orchestration exemplifi
 module BitNetOrchestration =
     // Actor messages for BitNet models
     type ModelMessage =
-        | ProcessInput of Tensor
-        | ExpandCapability of ModelCapability
-        | ReleaseResources
-        | QueryStatus
+       <br>ProcessInput of Tensor
+       <br>ExpandCapability of ModelCapability
+       <br>ReleaseResources
+       <br>QueryStatus
     
     // BitNet model actor
     let createBitNetActor (config: BitNetConfig) =
@@ -449,7 +449,7 @@ module BitNetOrchestration =
                 let! msg = mailbox.Receive()
                 
                 match msg with
-                | ProcessInput tensor ->
+               <br>ProcessInput tensor ->
                     try
                         // Process input with current model
                         let result = BitNet.forward model tensor
@@ -460,7 +460,7 @@ module BitNetOrchestration =
                         // Try model expansion as recovery strategy
                         mailbox.Self <! ExpandCapability ModelCapability.HigherPrecision
                 
-                | ExpandCapability capability ->
+               <br>ExpandCapability capability ->
                     // Dynamic expansion to more capable model
                     let expandedConfig = BitNetConfig.withCapability config capability
                     let expandedModel = BitNet.load expandedConfig.ModelPath
@@ -474,11 +474,11 @@ module BitNetOrchestration =
                     
                     mailbox.Supervisor <! CapabilityExpanded capability
                 
-                | ReleaseResources ->
+               <br>ReleaseResources ->
                     // Graceful shutdown
                     BitNet.unload model
                     
-                | QueryStatus ->
+               <br>QueryStatus ->
                     mailbox.Sender() <! ModelStatus {
                         CurrentDevice = activeDevice
                         MemoryUsage = BitNet.getMemoryUsage model
@@ -576,9 +576,9 @@ graph TD
     end
     
     subgraph Characteristics["Hardware Characteristics"]
-        NVIDIA_C["• 108 SM Units | • 40-80GB HBM2 | • 1.5TB/s bandwidth | • XNOR via custom kernels"]
-        CPU_C["• 64-128 cores | • AVX-512 SIMD | • <1TB/s memory bandwidth | • VNNI instructions"]
-        Tenstorrent_C["• 120 Tensix cores | • 120MB SRAM | • Native binary operations | • RISC-V programmable"]
+        NVIDIA_C["• 108 SM Units<br>• 40-80GB HBM2<br>• 1.5TB/s bandwidth<br>• XNOR via custom kernels"]
+        CPU_C["• 64-128 cores<br>• AVX-512 SIMD<br>• <1TB/s memory bandwidth<br>• VNNI instructions"]
+        Tenstorrent_C["• 120 Tensix cores<br>• 120MB SRAM<br>• Native binary operations<br>• RISC-V programmable"]
     end
     
     NVIDIA --> NVIDIA_C
@@ -586,9 +586,9 @@ graph TD
     Tenstorrent --> Tenstorrent_C
     
     subgraph CodeGen["Unique Optimization Strategies"]
-        CUDA["CUDA Kernels | Thread coarsening | Shared memory tiling"]
-        AVX["AVX-512 Vectorization | Cache blocking | SIMD VNNI"]
-        Tensix["Packet Neural Networks | Computational graph mapping | In-memory execution"]
+        CUDA["CUDA Kernels<br>Thread coarsening<br>Shared memory tiling"]
+        AVX["AVX-512 Vectorization<br>Cache blocking<br>SIMD VNNI"]
+        Tensix["Packet Neural Networks<br>Computational graph mapping<br>In-memory execution"]
     end
     
     NVIDIA_C --> CUDA
@@ -766,12 +766,12 @@ This implementation:
 
 Our approach delivers consistent performance across hardware platforms while maintaining correctness guarantees:
 
-| Metric | NVIDIA A100 | AMD EPYC CPU | Tenstorrent Grayskull |
+| Metric<br>NVIDIA A100<br>AMD EPYC CPU<br>Tenstorrent Grayskull |
 |--------|------------|--------------|----------------------|
-| Throughput (relative) | 1.0x | 0.3x | 0.9x |
-| Energy Efficiency | 2.3 TFLOP/W | 0.8 TFLOP/W | 4.1 TFLOP/W |
-| Binary Op Acceleration | Custom Kernel | AVX-512 VNNI | Hardware Native |
-| Deployment Flexibility | High Power | Widely Available | Specialized |
+| Throughput (relative)<br>1.0x<br>0.3x<br>0.9x |
+| Energy Efficiency<br>2.3 TFLOP/W<br>0.8 TFLOP/W<br>4.1 TFLOP/W |
+| Binary Op Acceleration<br>Custom Kernel<br>AVX-512 VNNI<br>Hardware Native |
+| Deployment Flexibility<br>High Power<br>Widely Available<br>Specialized |
 
 This multi-platform approach provides key antifragile benefits:
 - No reliance on a single hardware vendor

@@ -22,9 +22,9 @@ flowchart TD
     end
     
     subgraph LimitedPaths["Limited Adaptation Paths"]
-        GIL --> Concurrency["• Limited true parallelism | • Thread contention | • Single-core bottlenecks"]
-        DynamicType --> Safety["• Runtime errors instead of compile-time | • Type confusion in large codebases | • Limited static analysis"]
-        Interpreter --> Performance["• Interpretation overhead | • Memory inefficiency | • Deployment complexity"]
+        GIL --> Concurrency["• Limited true parallelism<br>• Thread contention<br>• Single-core bottlenecks"]
+        DynamicType --> Safety["• Runtime errors instead of compile-time<br>• Type confusion in large codebases<br>• Limited static analysis"]
+        Interpreter --> Performance["• Interpretation overhead<br>• Memory inefficiency<br>• Deployment complexity"]
     end
     
     style Python fill:#333,stroke:#aaa,stroke-width:2px,color:#fff
@@ -72,13 +72,13 @@ The antifragile principle of via negativa suggests that systems improve by remov
 %%{init: {'theme': 'dark', 'themeVariables': { 'primaryColor': '#242424', 'primaryTextColor': '#fff', 'primaryBorderColor': '#888', 'lineColor': '#d3d3d3', 'secondaryColor': '#2b2b2b', 'tertiaryColor': '#333' }}}%%
 graph TD
     subgraph CorePython["Python Core Evolution"]
-        PythonOriginal["Python 1.0 (1994) | • Clean, minimal syntax | • Simple object model | • Limited standard library"]
-        PythonModern["Python 3.12 (2023) | • Complex language semantics | • Intricate object model | • Sprawling standard library"]
+        PythonOriginal["Python 1.0 (1994)<br>• Clean, minimal syntax<br>• Simple object model<br>• Limited standard library"]
+        PythonModern["Python 3.12 (2023)<br>• Complex language semantics<br>• Intricate object model<br>• Sprawling standard library"]
     end
     
     subgraph Ecosystem["Ecosystem Complexity Growth"]
-        SimplePackaging["Simple packaging (1990s) | • Distutils | • Easy_install"]
-        ComplexPackaging["Modern packaging (2023) | • Pip | • Poetry | • Conda | • Pipenv | • PDM | • Virtualenv | • Pyenv | • And many more..."]
+        SimplePackaging["Simple packaging (1990s)<br>• Distutils<br>• Easy_install"]
+        ComplexPackaging["Modern packaging (2023)<br>• Pip<br>• Poetry<br>• Conda<br>• Pipenv<br>• PDM<br>• Virtualenv<br>• Pyenv<br>• And many more..."]
     end
     
     PythonOriginal --> PythonModern

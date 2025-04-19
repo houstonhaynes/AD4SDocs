@@ -102,8 +102,8 @@ flowchart TD
     end
     
     subgraph Maintainers["Impact on Maintainers"]
-        JSDevs["JavaScript Developers | (Widespread Knowledge)"]
-        GoDevs["Go Developers | (More Limited Pool)"]
+        JSDevs["JavaScript Developers<br>(Widespread Knowledge)"]
+        GoDevs["Go Developers<br>(More Limited Pool)"]
     end
     
     CurrentCompiler --> JSDevs
@@ -190,7 +190,7 @@ flowchart TD
     subgraph Implementations["Multiple Implementations"]
         GoImpl["Go Implementation"]
         JSImpl["JavaScript Implementation"]
-        FutureImpl["Future Implementations | (Rust, Zig, etc.)"]
+        FutureImpl["Future Implementations<br>(Rust, Zig, etc.)"]
     end
     
     LanguageSpec --> GoImpl
