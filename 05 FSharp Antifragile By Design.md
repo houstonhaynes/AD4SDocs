@@ -57,7 +57,7 @@ This model directly inspired:
 
 The pattern's adoption across such diverse languages demonstrates its fundamental insight: code should be structured in a way that aligns with human intuition about sequential and parallel execution. Martin Odersky, creator of Scala, noted in private correspondence with Syme: "I enjoyed a lot discussing with you at the WG 2.8. I have been thinking how to do active patterns in Scala."[^1]
 
-This approach exemplifies the antifragile property of being "long gamma"—creating outsized positive impacts from positive changes in the environment. As computing increasingly moved toward concurrent and distributed models, F#'s async approach proved prescient, positioning the language to thrive rather than merely survive this paradigm shift.
+This approach exemplifies the antifragile property of being "long gamma"—creating outsized positive impacts from positive changes in the environment. As computing increasingly moved toward concurrent and distributed models, F#'s async approach proved prescient, positioning the language's continued influence to inspire rather than merely survive this paradigm shift.
 
 ## Extensible by Design: The Secret of F#'s Adaptability
 
