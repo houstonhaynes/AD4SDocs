@@ -421,15 +421,15 @@ let asicConfig =
         PlatformConfig.base'
 ```
 
-This approach enables developers to compile and deploy the same F# BitNet code to radically different hardware targets without changing the core logic. The Fidelity Framework automatically adapts the code generation and memory management strategies based on the target platform configuration.
+This future state would enable developers to compile and deploy the substantially similar F# BitNet code to radically different hardware targets without changing the core logic. While current work is adapting to current hybrid approaches, SpeakEZ's work in this area focuses on a strata of platform code that would automatically adapt memory management and code optimization strategies based on a declarative target platform configuration.
 
-What's crucial to understand is that while Fidelity takes a practical hybrid approach by leveraging existing technologies like LLVM and platform-specific compilers, this future state of true hardware independence is only achievable because of F#'s fundamental design principles. The language's layered separation of concerns—from its type system to its effect management to its computation expressions—creates what could be called "progressive optionality." Each layer maintains independence while preserving the ability to specialize at later stages.
+What's crucial to understand is that while Fidelity takes a practical hybrid approach by leveraging existing technologies like .NET tooling and platform-specific compilers, this future state of true hardware independence is only achievable because of F#'s fundamental design principles. The language's layered separation of concerns—from its type system to its effect management to its computation expressions—creates what could be called "progressive optionality." Each layer maintains independence while preserving the ability to specialize at later stages.
 
-Consider how this works: F#'s type system enforces correctness independent of execution model; its immutability-by-default ensures reasoning about code remains valid across platforms; and its computation expressions provide a clean separation between what computation is performed and how it executes. Unlike languages where runtime assumptions are baked into the core design, F# was built with this layered abstraction from day one. This is why Fidelity can transform the same high-level F# code into radically different execution models—from garbage-collected runtime to bare-metal execution to specialized AI hardware—without requiring developers to rewrite or even substantially modify their core logic. The optionality is preserved throughout the compilation pipeline, a quality that cannot be retrofitted onto languages lacking these foundational principles.
+Consider how this works: F#'s type system enforces correctness independent of execution model; its immutability-by-default ensures reasoning about code remains valid across platforms; and its computation expressions provide a clean separation between what computation is performed and how it executes. Unlike languages where runtime assumptions are baked into the core design, F# was built with this layered abstraction from day one. This is why Fidelity can transform the same high-level F# code into radically different execution models—from garbage-collected runtime to bare-metal execution to specialized AI hardware—without requiring developers to choose a new language or unfamiliar technology stack. The optionality is preserved throughout the compilation pipeline, a quality that cannot be retrofitted onto languages lacking these foundational principles.
 
 ### Dynamic Orchestration Across Hardware Boundaries
 
-The ultimate demonstration of F#'s antifragility is the BitNet Orchestration system, which dynamically distributes AI workloads across heterogeneous hardware based on resource availability and task complexity:
+The ultimate demonstration of F#'s antifragility is in SpeakEZ's design for a BitNet Orchestration system, which dynamically distributes AI workloads across heterogeneous hardware based on resource availability and task complexity:
 
 ```fsharp
 // BitNet Orchestration system for cross-hardware deployment
@@ -467,7 +467,7 @@ type BitNetOrchestrator(configs: Map<PlatformType, PlatformConfig>) =
     }
 ```
 
-This orchestration system enables efficient deployment of AI workloads across the entire computing spectrum, from CPUs to GPUs to specialized ASICs, all while maintaining the type safety and functional programming benefits of F#.
+While there's always a system-dependent demand for knowledge of a given device or platform's capability, this orchestration system will enable flexible segmentation and deployment of AI workloads across the entire computing spectrum, from CPUs to GPUs and even to specialized ASICs, all while maintaining the type safety and functional programming benefits of F#.
 
 ## Conclusion: F# as the Nexus of Antifragile Design
 
