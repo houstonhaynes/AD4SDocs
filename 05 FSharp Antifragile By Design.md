@@ -20,9 +20,7 @@ Don Syme, F#'s creator, developed several foundational innovations that would pr
 
 ### Generics: Cross-Language Type Safety
 
-One of F#'s most significant contributions to the programming landscape came before the language itself was fully formed. In 2001, Don Syme led the design and implementation of generics for .NET, which would fundamentally transform the platform's type system and influence virtually all .NET languages.
-
-Syme's work on generics exemplifies the antifragile principle of skin in the game—theoretical knowledge applied to practical problems with real consequences. His paper "Design and Implementation of Generics for the .NET Common Language Runtime" (with Andrew Kennedy) laid the foundation for bringing parametric polymorphism to a mainstream commercial platform in a way that previous attempts had not achieved.
+One of F#'s most significant contributions to the programming landscape came before the language itself was fully formed. In 2001, Don Syme led the design and implementation of generics for .NET, which would fundamentally transform the platform's type system and exhibit influence throughout modern software language design. His paper "Design and Implementation of Generics for the .NET Common Language Runtime" (with Andrew Kennedy) laid the foundation for bringing parametric polymorphism to a mainstream commercial platform in a way that previous attempts had not achieved.
 
 The implementation of generics in .NET was revolutionary because, unlike Java's approach of type erasure, it maintained full type information at runtime through reification. This design choice created a more robust system that could enforce type safety across language boundaries—a critical feature for a multilingual platform like .NET.
 
