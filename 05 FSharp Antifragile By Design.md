@@ -4,7 +4,7 @@
 
 In the ever evolving landscape of programming languages, most systems strive merely for robustness—the ability to withstand stress without breaking. F#, however, has demonstrated a rarer quality: antifragility—the capacity to not just survive volatility but to actively improve from it. From its inception two decades ago as "OCaml for .NET" to its current position spanning web development, data science, and native compilation, F# exemplifies how thoughtful language design can create systems that gain from disorder rather than bolting on ill-fitted adaptations.
 
-This article examines F#'s journey through the lens of antifragile design principles, exploring how its core design decisions, evolutionary path, and growing ecosystem embody the characteristics that allow systems to thrive amid uncertainty and change. Central to this story is F#'s remarkable influence on other languages—a manifestation of "ersatz optionality" where languages like C#, JavaScript, and even Swift and Rust have looked to F# as a source of battle-tested features they could adapt to their own paradigms.
+This article examines F#'s journey through the lens of antifragile design principles, exploring how its core design decisions, evolutionary path, and growing ecosystem embody the characteristics that allow systems to thrive amid uncertainty and change. Central to this story is F#'s remarkable influence on other languages—a manifestation of "ersatz optionality" where languages like C#, JavaScript, and even Swift and Rust have looked to F# as a source of well-principled features they could adapt to their own paradigms.
 
 ## Origins: A Functional Foundation Built for Adaptation
 
