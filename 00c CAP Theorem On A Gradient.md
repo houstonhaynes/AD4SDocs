@@ -26,7 +26,7 @@ This gradient-based understanding enables more sophisticated architectural decis
 
 ## Redistributing Risk
 
-A key insight of AD4S is that architectural choices don't eliminate risk—they redistribute it. When you choose a particular balance of CAP properties, you're deciding where to accept vulnerability and where to ensure guarantees.
+A key insight of AD4S is that architectural choices don't eliminate risk, they redistribute it. When you choose a particular balance of CAP properties, you're deciding where to accept vulnerability and where to ensure guarantees.
 
 For example, choosing consistency over availability means accepting the risk of temporary service interruptions to ensure data integrity. Conversely, prioritizing availability over consistency means accepting the risk of working with potentially stale data to ensure continuous operation. Anyone who has posted to a social media application, only for it to 'disappear' until moments (or minutes) later has seen this compromise in real time.
 
@@ -56,7 +56,7 @@ This focus on adaptable instrumentation ensures that operations teams maintain v
 
 ## Fault and Resource Isolation
 
-Antifragile systems contain failures rather than amplifying them. Netflix deserves significant recognition for advancing this thinking through their groundbreaking Chaos Monkey approach—deliberately introducing failures into production systems to uncover weaknesses and build resilience. This revolutionary practice, later extended into the broader Simian Army and eventually influencing AWS's Fault Injection Simulator, fundamentally changed how the industry approaches system reliability.
+Antifragile systems contain failures rather than amplifying them. Netflix deserves significant recognition for advancing this thinking through their groundbreaking Chaos Monkey approach, deliberately introducing failures into production systems to uncover weaknesses and build resilience. This revolutionary practice, later extended into the broader Simian Army and eventually influencing AWS's Fault Injection Simulator, fundamentally changed how the industry approaches system reliability.
 
 Similar approaches have proliferated across the industry, including the development of "Simmy" chaos simulators and policy management tools like Polly that bring systematic resilience policies into modern technology stacks. These innovations represent antifragility in its purest form: systems that actively learn and strengthen through exposure to controlled stress.
 
@@ -67,7 +67,7 @@ Building on these insights, several key patterns have emerged for fault isolatio
 - **Timeouts and deadlines**: Ensuring operations don't hang indefinitely, maintaining system responsiveness
 - **Resource quotas**: Limiting consumption to prevent resource exhaustion from compromising the entire system
 
-These patterns create boundaries within the system that prevent localized issues from becoming system-wide failures. They embody the essence of antifragile design—not just surviving stress, but becoming stronger through exposure to it.
+These patterns create boundaries within the system that prevent localized issues from becoming system-wide failures. They embody the essence of antifragile design, not just surviving stress, but becoming stronger through exposure to it.
 
 ## Conclusion: Embracing the Gradient
 

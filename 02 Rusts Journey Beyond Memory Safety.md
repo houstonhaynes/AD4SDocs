@@ -4,7 +4,7 @@
 
 Since its introduction in 2010, Rust has fundamentally changed the landscape of systems programming. By combining memory safety without garbage collection, fearless concurrency, and zero-cost abstractions, Rust has pioneered a path that many thought impossible: making systems programming both safe and performant simultaneously. Its ownership system with borrowing and lifetimes has eliminated entire categories of bugs that have plagued C and C++ codebases for decades.
 
-Despite these revolutionary advances, Rust's relationship with antifragile design principles remains complex. While the language excels at preventing specific forms of fragility (memory corruption, data races), it introduces other rigidities that can impede its ability to gain from disorder and volatility—the hallmark of truly antifragile systems.
+Despite these revolutionary advances, Rust's relationship with antifragile design principles remains complex. While the language excels at preventing specific forms of fragility (memory corruption, data races), it introduces other rigidities that can impede its ability to gain from disorder and volatility, the hallmark of truly antifragile systems.
 
 This article examines Rust through the lens of Antifragile Design for Systems (AD4S), identifying both its strengths and limitations while proposing evolutionary paths that could enhance Rust's antifragility without compromising its core safety guarantees.
 
@@ -180,7 +180,7 @@ impl Graph {
 
 This example demonstrates how Rust's ownership model forces artificial indirection (using indices instead of references) for graph structures, resulting in code that's less intuitive and potentially less efficient than equivalent code in garbage-collected languages. 
 
-The cognitive overhead here isn't merely an inconvenience—it's a fundamental constraint on optionality. When developers must constantly contend with ownership rules that fight against the natural structure of their problem domain, they experience a form of decision fatigue that limits creative problem-solving. This fatigue represents an invisible cost that's rarely accounted for in evaluations of Rust's benefits:
+The cognitive overhead here isn't merely an inconvenience, it's a fundamental constraint on optionality. When developers must constantly contend with ownership rules that fight against the natural structure of their problem domain, they experience a form of decision fatigue that limits creative problem-solving. This fatigue represents an invisible cost that's rarely accounted for in evaluations of Rust's benefits:
 
 ```rust
 // Example: Cognitive overhead of working with a simple cache
@@ -212,7 +212,7 @@ In this example, the developer's natural intuition is thwarted by the borrow che
 
 ### 2. Unsafe as Binary Switch: Missing the Barbell
 
-Rust's `unsafe` keyword operates as a binary switch—code is either completely safe or completely unsafe. This approach misses the opportunity for a more nuanced barbell strategy:
+Rust's `unsafe` keyword operates as a binary switch, code is either completely safe or completely unsafe. This approach misses the opportunity for a more nuanced barbell strategy:
 
 ```rust
 // Current approach: Binary safe/unsafe switch
@@ -416,7 +416,7 @@ This architectural approach would:
 
 ### 4. Via Negativa: Simplify Instead of Adding Features
 
-Rust could benefit from applying the via negativa principle—improving through subtraction rather than addition:
+Rust could benefit from applying the via negativa principle, improving through subtraction rather than addition:
 
 ```rust
 // Current trend: Adding complexity through new features
@@ -486,8 +486,8 @@ This approach would:
 
 Rust has already revolutionized systems programming by delivering memory safety without garbage collection. Its next frontier is to evolve from a robust language (one that resists stressors) to a truly antifragile one (one that improves from exposure to stressors).
 
-The paths outlined in this article—graduated memory management, nuanced safety barbells, multiple implementation options, simplification, and dialect experimentation—represent viable evolutionary directions that preserve Rust's core strengths while enhancing its adaptability to an uncertain future.
+The paths outlined in this article, graduated memory management, nuanced safety barbells, multiple implementation options, simplification, and dialect experimentation, represent viable evolutionary directions that preserve Rust's core strengths while enhancing its adaptability to an uncertain future.
 
-By embracing these antifragile design principles, Rust can continue its trajectory as a transformative systems programming language, not only eliminating specific categories of bugs but creating a truly adaptive foundation for the next generation of software systems. The result would be a language that maintains its revolutionary safety guarantees while gaining the flexibility to thrive in diverse and changing environments—the hallmark of true antifragility.
+By embracing these antifragile design principles, Rust can continue its trajectory as a transformative systems programming language, not only eliminating specific categories of bugs but creating a truly adaptive foundation for the next generation of software systems. The result would be a language that maintains its revolutionary safety guarantees while gaining the flexibility to thrive in diverse and changing environments, the hallmark of true antifragility.
 
-Rust's journey from safety to antifragility represents not just an evolution of a programming language but a broader shift in how we think about systems design. By recognizing both Rust's revolutionary contributions and its current limitations, we can chart a path toward systems that are not merely safe or robust, but truly antifragile—gaining from the disorder and volatility that characterize our complex computing landscape.
+Rust's journey from safety to antifragility represents not just an evolution of a programming language but a broader shift in how we think about systems design. By recognizing both Rust's revolutionary contributions and its current limitations, we can chart a path toward systems that are not merely safe or robust, but truly antifragile, gaining from the disorder and volatility that characterize our complex computing landscape.

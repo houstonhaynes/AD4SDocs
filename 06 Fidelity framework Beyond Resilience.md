@@ -4,7 +4,7 @@
 
 Antifragility, as conceived by Nassim Nicholas Taleb, represents systems that don't merely withstand stressors but actively improve because of them. Unlike robust systems that resist change, or resilient systems that recover from it, antifragile systems evolve and strengthen through exposure to volatility, randomness, and stress.
 
-This document analyzes how the Fidelity framework embodies antifragile principles in its architecture, creating not just a durable software system, but one that can thrive amid uncertainty and disorder—a critical distinction often overlooked in traditional software engineering practices.
+This document analyzes how the Fidelity framework embodies antifragile principles in its architecture, creating not just a durable software system, but one that can thrive amid uncertainty and disorder, a critical distinction often overlooked in traditional software engineering practices.
 
 ```mermaid
 %%{init: {'theme': 'dark', 'themeVariables': { 'primaryColor': '#242424', 'primaryTextColor': '#fff', 'primaryBorderColor': '#888', 'lineColor': '#d3d3d3', 'secondaryColor': '#2b2b2b', 'tertiaryColor': '#333' }}}%%
@@ -544,7 +544,7 @@ flowchart TB
     style Vectorize fill:#4FC3F7,stroke:#fff,stroke-width:1px,color:#fff
 ```
 
-The diagram illustrates how optimization passes have a convex payoff profile—limited downside risk (worst case is code that still works but isn't faster) but potentially significant upside (major performance improvements).
+The diagram illustrates how optimization passes have a convex payoff profile, limited downside risk (worst case is code that still works but isn't faster) but potentially significant upside (major performance improvements).
 
 ### 7. Redundancy: Multi-Level Isolation and Replication
 
@@ -846,6 +846,6 @@ The Fidelity framework's design anticipates the unknown by:
 
 The Fidelity framework demonstrates that software systems can move beyond mere resilience to true antifragility. By embracing principles like optionality, decentralization, and convex tinkering, it creates a system that can actually improve through exposure to stressors and volatility.
 
-The key insight is that antifragile software design doesn't just tolerate failure—it harnesses it as a driver of improvement. The functional-first approach of F# combined with the ability to "go to the metal" creates a barbell strategy that combines safety with opportunity, while the actor model and supervision hierarchies transform potentially destructive failures into constructive learning experiences.
+The key insight is that antifragile software design doesn't just tolerate failure, it harnesses it as a driver of improvement. The functional-first approach of F# combined with the ability to "go to the metal" creates a barbell strategy that combines safety with opportunity, while the actor model and supervision hierarchies transform potentially destructive failures into constructive learning experiences.
 
 Organizations seeking to build truly robust software systems should consider these principles of antifragile design, recognizing that the path to long-term stability paradoxically requires embracing volatility and designing systems that gain from disorder rather than merely surviving it.

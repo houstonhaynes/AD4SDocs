@@ -2,13 +2,13 @@
 
 ## The Inward Focus of Traditional Methodologies
 
-Traditional Software Development Life Cycle (SDLC) methodologies—from Waterfall to Agile and its many derivatives—share a common limitation: they focus primarily inward on the development process itself rather than outward on the broader context in which software systems exist and operate. This inward focus, which AD4S characterizes as "navel-gazing," creates blind spots that can lead to significant problems despite rigorous adherence to methodology.
+Traditional Software Development Life Cycle (SDLC) methodologies, from Waterfall to Agile and its many derivatives, share a common limitation: they focus primarily inward on the development process itself rather than outward on the broader context in which software systems exist and operate. This inward focus, which AD4S characterizes as "navel-gazing," creates blind spots that can lead to significant problems despite rigorous adherence to methodology.
 
 ## Everything Old Is New Again
 
 There are natural innovation and implementation cycles in software architecture. It's been that way since the 1970s. With the proliferation of commoditized compute and storage, patterns once thought untenable are now seeing renewed interest. 
 
-But there's a dark side to progress. Due to the expanded "surface area" of digital technologies, the threats to data security have grown exponentially. Many of the intentionally naive patterns from earlier eras existed in an inherently bounded context—systems used and maintained at specific locations with limited or no internet access. As those early architectural ideas are re-imagined for the information age, so too must shielding and resiliency be re-imagined for those patterns to be useful in a forward-looking digital landscape.
+But there's a dark side to progress. Due to the expanded "surface area" of digital technologies, the threats to data security have grown exponentially. Many of the intentionally naive patterns from earlier eras existed in an inherently bounded context, systems used and maintained at specific locations with limited or no internet access. As those early architectural ideas are re-imagined for the information age, so too must shielding and resiliency be re-imagined for those patterns to be useful in a forward-looking digital landscape.
 
 ## Beyond Process-Centrism
 
@@ -48,7 +48,7 @@ Agile values feedback, but primarily focuses on feedback that can be quickly obt
 
 Where Agile methodologies often struggle with the uneven distribution of skills, experience, and organizational influence, AD4S directly addresses these imbalances through structured knowledge capture and transparent decision frameworks. The AD4S Ledger transforms team dynamics by making implicit knowledge explicit and contextual, allowing contribution based on insight rather than authority or seniority alone.
 
-By documenting decision contexts, constraints, and alternatives considered, the framework creates a mechanism for meaningful participation regardless of hierarchical position. Junior team members can contribute unique perspectives by referencing captured patterns, while experienced practitioners' wisdom becomes accessible beyond their immediate sphere of influence. This democratization of knowledge doesn't erase skill differences—it leverages them as complementary strengths while preventing them from becoming barriers to sound decision-making.
+By documenting decision contexts, constraints, and alternatives considered, the framework creates a mechanism for meaningful participation regardless of hierarchical position. Junior team members can contribute unique perspectives by referencing captured patterns, while experienced practitioners' wisdom becomes accessible beyond their immediate sphere of influence. This democratization of knowledge doesn't erase skill differences, it leverages them as complementary strengths while preventing them from becoming barriers to sound decision-making.
 
 The framework's emphasis on temporal knowledge graphs further mitigates the impact of inevitable team transitions, ensuring that new team members can easily fill critical gaps in understanding. This approach builds organizational resilience to help everyone "level up" when confronted with a new sub-domain.
 
@@ -56,7 +56,7 @@ The framework's emphasis on temporal knowledge graphs further mitigates the impa
 
 The Reactive Manifesto makes progress over traditional Agile patterns and practices but still suffers from a form of navel-gazing. Its self-concern imbues an unhealthy projection onto a system's users which in effect is an abdication of responsibility.
 
-It naively creates a tautological loop where it only responds to directed input—and fails to take any notice of larger contextual boundaries in which the system *should* (and in certain legal contexts, must) operate. This includes governance and compliance, privacy, ethics, accessibility and sustainability.
+It naively creates a tautological loop where it only responds to directed input, and fails to take any notice of larger contextual boundaries in which the system *should* (and in certain legal contexts, must) operate. This includes governance and compliance, privacy, ethics, accessibility and sustainability.
 
 The Reactive approach assumes there will be no contention between competing interests of users (and system managers) and therefore makes no attempt to be the arbiter of where and how certain compromises are to be made. It also assumes there's no potential for misuse or abuse, which is a very dangerous assumption. What if business managers or marketing teams ask engineers to change the system to behave in ways that are illegal or unethical? The Reactive approach has a tacit assumption that if constituencies don't specifically *ask* for these things to be considered, there's no need to address broader systemic concerns.
 

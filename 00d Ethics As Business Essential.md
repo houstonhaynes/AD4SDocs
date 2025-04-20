@@ -2,9 +2,9 @@
 
 ## Beyond Optional Considerations
 
-In traditional software development approaches, ethical considerations are often treated as optional add-ons—nice-to-have features that can be addressed if time and budget permit. This perspective fundamentally misunderstands both the responsibility of technology creators and the business reality of modern software systems.
+In traditional software development approaches, ethical considerations are often treated as optional add-ons, nice-to-have features that can be addressed if time and budget permit. This perspective fundamentally misunderstands both the responsibility of technology creators and the business reality of modern software systems.
 
-AD4S reframes ethics not as an optional consideration but as a business essential—a core component of system design that affects everything from user adoption to regulatory compliance, from reputation management to long-term sustainability.
+AD4S reframes ethics not as an optional consideration but as a business essential, a core component of system design that affects everything from user adoption to regulatory compliance, from reputation management to long-term sustainability.
 
 ## Anticipating Unintended Harms
 
@@ -23,7 +23,7 @@ By surfacing these considerations during design rather than after deployment, te
 
 ## Case Studies in Unforced Errors
 
-The technology landscape is littered with examples of preventable ethical failures—what AD4S terms "unforced errors." These are not cases of malicious intent but of insufficient consideration of potential consequences.
+The technology landscape is littered with examples of preventable ethical failures, what AD4S terms "unforced errors." These are not cases of malicious intent but of insufficient consideration of potential consequences.
 
 Examples include:
 

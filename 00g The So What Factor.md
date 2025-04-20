@@ -30,7 +30,7 @@ As an external framework, AD4S offers:
 - **Compliance Readiness**: Proactive alignment with regulatory and ethical standards
 - **Partnership Foundations**: Shared understanding with customers and other external stakeholders
 
-This dual nature allows organizations to improve internal processes while simultaneously strengthening external relationships—a powerful combination for sustainable success.
+This dual nature allows organizations to improve internal processes while simultaneously strengthening external relationships, a powerful combination for sustainable success.
 
 ## Similarities to SOC 2 & 3
 
@@ -74,7 +74,7 @@ For most organizations, the cost-benefit analysis strongly favors adoption, part
 
 ### No Analysis Paralysis
 
-A legitimate concern with comprehensive frameworks is their potential to induce "analysis paralysis"—excessive deliberation that delays action. AD4S explicitly guards against this through:
+A legitimate concern with comprehensive frameworks is their potential to induce "analysis paralysis", excessive deliberation that delays action. AD4S explicitly guards against this through:
 
 - **Tiered Application**: Scalable approach that can be adjusted to context
 - **Decision Timeboxing**: Recommended time limits for different types of decisions
@@ -87,7 +87,7 @@ Despite superficial resemblance to traditional frameworks, AD4S is better unders
 
 ### It's Not a Shortcut
 
-AD4S doesn't promise to make complex problems simple—that would be dishonest. Instead, it provides tools to navigate complexity more effectively. The goal isn't to avoid difficult work but to ensure that effort is directed productively and that important considerations aren't overlooked.
+AD4S doesn't promise to make complex problems simple, that would be dishonest. Instead, it provides tools to navigate complexity more effectively. The goal isn't to avoid difficult work but to ensure that effort is directed productively and that important considerations aren't overlooked.
 
 ### Checklists are for Experts
 
@@ -95,13 +95,17 @@ AD4S includes various checklists and assessment tools, but these are designed as
 
 ## What Led Me To This Point
 
+I apologize for my misinterpretation. I'll completely rewrite that section to accurately reflect your intended meaning about "The Two Bobs" mentors:
+
 ### Lessons from 'The Two Bobs'
 
-The character archetype of "The Two Bobs" from Office Space—external consultants who evaluate without understanding—represents exactly what AD4S works to avoid. Real improvement doesn't come from superficial assessment but from deep engagement with context and constraints.
+The "Two Bobs" refers to two pivotal mentors in the development of AD4S: Bob Moog, the renowned synthesizer inventor, and Robert Cymbalski, former head of software engineering at Compaq and Red Hat who led teams to gain IBM OS approval. From Moog came the invaluable lesson that credentials, even a PhD, pale in comparison to grounded engineering and tangible business outcomes. Cymbalski, with his many patents now embedded in technologies from server processors to mobile chips, demonstrated how to embrace Brooks' "accidents and essence" principles alongside Agile practices while avoiding dogmatic approaches.
+
+Cymbalski's insight that FDA regulatory artifacts deserve equal attention to the code that makes systems run represents a cornerstone of AD4S thinking. His balanced approach, maintaining rigor in both documentation and implementation without letting either dominate, exemplifies how seemingly opposing concerns can be harmoniously integrated. These lessons from "The Two Bobs" continue to resonate throughout the AD4S framework, emphasizing practical outcomes over ivory tower purity and thoughtful integration over blind adherence to methodology.
 
 ### Further Lessons from Regulated Verticals
 
-Domains with established regulatory frameworks—finance, automotive, telecom, manufacturing, healthcare—offer valuable lessons about systematic approaches to complex systems with significant real-world impacts. AD4S draws on these lessons while adapting them to the unique characteristics of software systems.
+Domains with established regulatory frameworks, finance, automotive, telecom, manufacturing, healthcare, offer valuable lessons about systematic approaches to complex systems with significant real-world impacts. AD4S draws on these lessons while adapting them to the unique characteristics of a given organization within the markets and industries in which they operate.
 
 ## Risk Calculation - a CVE-inspired Model
 
@@ -119,6 +123,6 @@ This approach ensures that risks are handled deliberately rather than through im
 
 ## Conclusion: The Value Proposition
 
-The "So What" factor for AD4S ultimately comes down to a simple value proposition: it helps teams build better software systems—better not just in technical quality but in their alignment with human needs, ethical considerations, and business sustainability.
+The "So What" factor for AD4S ultimately comes down to a simple value proposition: it helps teams build better software systems, better not just in technical quality but in their alignment with human needs, ethical considerations, and business sustainability.
 
-By providing structured approaches to complex design decisions while maintaining the flexibility to adapt to specific contexts, AD4S offers a practical path to more responsible, sustainable, and ultimately more successful software development. In a world where software increasingly mediates critical aspects of human experience, this comprehensive approach isn't just nice to have—it's essential.
+By providing structured approaches to complex design decisions while maintaining the flexibility to adapt to specific contexts, AD4S offers a practical path to more responsible, sustainable, and ultimately more reliable software development. In a world where software increasingly mediates critical aspects of human experience, this comprehensive approach isn't just nice to have, it's essential.

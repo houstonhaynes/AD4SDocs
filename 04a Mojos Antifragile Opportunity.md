@@ -56,7 +56,7 @@ fn parallel_task[T: AnyType](data: List[T]):
         process_in_parallel(item)
 ```
 
-This compatibility focus conflicts with the antifragile principle of optionality—by binding itself to Python's evolution and limitations, Mojo reduces its adaptation potential rather than maximizing it.
+This compatibility focus conflicts with the antifragile principle of optionality, by binding itself to Python's evolution and limitations, Mojo reduces its adaptation potential rather than maximizing it.
 
 ### 2. Rust-Inspired Ownership Without Rust's Compiler Guarantees
 
@@ -353,6 +353,6 @@ For the Mojo team and community, this means:
 3. **Prioritizing simplicity**: Focusing on excellence in specific domains rather than universality across all computing contexts
 4. **Building in adaptation mechanisms**: Designing the language itself to evolve and adapt to changing requirements
 
-By applying these antifragile design principles, Mojo could emerge as a truly innovative language that gains from the disorder and volatility of the computing landscape rather than merely trying to span existing paradigms. The result would be a language that doesn't just combine the syntax of Python with the performance of Rust, but creates something genuinely new—a language designed for antifragility from the ground up.
+By applying these antifragile design principles, Mojo could emerge as a truly innovative language that gains from the disorder and volatility of the computing landscape rather than merely trying to span existing paradigms. The result would be a language that doesn't just combine the syntax of Python with the performance of Rust, but creates something genuinely new, a language designed for antifragility from the ground up.
 
 The opportunity is substantial. By learning from the evolutionary paths of its predecessors, Mojo can avoid recapitulating their limitations and instead chart a course toward a language that embodies antifragile design principles from its foundation. This would position Mojo not merely as an incremental improvement over existing languages, but as a transformative step forward in how we design programming languages for an uncertain and rapidly evolving computing future.

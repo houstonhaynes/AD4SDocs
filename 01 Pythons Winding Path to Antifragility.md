@@ -2,9 +2,9 @@
 
 ## Introduction: The Paradox of Python's Success
 
-Python has achieved unprecedented adoption across computing disciplines, from web development to scientific computing and artificial intelligence. Its success stems from genuine strengths: readability, a gentle learning curve, and an extensive ecosystem of libraries. Yet this very success has exposed fundamental limitations that prevent Python from exhibiting true antifragility—the ability to not just withstand stress but improve from it.
+Python has achieved unprecedented adoption across computing disciplines, from web development to scientific computing and artificial intelligence. Its success stems from genuine strengths: readability, a gentle learning curve, and an extensive ecosystem of libraries. Yet this very success has exposed fundamental limitations that prevent Python from exhibiting true antifragility, the ability to not just withstand stress but improve from it.
 
-Python's fragilities become increasingly apparent as systems scale and performance demands grow. What began as an elegant scripting language has evolved into what many engineering teams describe as a "necessary compromise"—too deeply embedded to replace, yet fundamentally unsuited for the demands placed upon it. This article examines Python through the lens of antifragile design principles and proposes paths toward improvement that acknowledge both Python's entrenched position and its structural limitations.
+Python's fragilities become increasingly apparent as systems scale and performance demands grow. What began as an elegant scripting language has evolved into what many engineering teams describe as a "necessary compromise", too deeply embedded to replace, yet fundamentally unsuited for the demands placed upon it. This article examines Python through the lens of antifragile design principles and proposes paths toward improvement that acknowledge both Python's entrenched position and its structural limitations.
 
 ## Evaluating Python Against Antifragile Design Principles
 
@@ -41,7 +41,7 @@ The Global Interpreter Lock (GIL), in particular, represents a critical constrai
 
 ### 2. Barbell Strategy: Missing the Performance End
 
-Antifragile systems implement Taleb's barbell strategy—combining extreme safety on one end with controlled exposure to high-impact opportunities on the other. Python excels at the safety end through readability and dynamism but fails at the performance end:
+Antifragile systems implement Taleb's barbell strategy, combining extreme safety on one end with controlled exposure to high-impact opportunities on the other. Python excels at the safety end through readability and dynamism but fails at the performance end:
 
 ```python
 # Python example with no performance barbell

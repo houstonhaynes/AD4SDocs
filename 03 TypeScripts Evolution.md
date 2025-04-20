@@ -2,7 +2,7 @@
 
 ## Introduction: TypeScript at a Crossroads
 
-TypeScript stands at a pivotal moment in its evolution. Since its introduction in 2012, Microsoft's typed superset of JavaScript has grown from an experimental language to the backbone of modern web development. TypeScript's unique position—providing static typing that compiles to JavaScript—has created a powerful barbell strategy that combines the safety of static typing with the universal deployment capability of JavaScript.
+TypeScript stands at a pivotal moment in its evolution. Since its introduction in 2012, Microsoft's typed superset of JavaScript has grown from an experimental language to the backbone of modern web development. TypeScript's unique position, providing static typing that compiles to JavaScript, has created a powerful barbell strategy that combines the safety of static typing with the universal deployment capability of JavaScript.
 
 The announcement that TypeScript is transitioning its compiler from JavaScript to Go represents a significant architectural shift. This decision, while offering potential performance and maintainability benefits, raises important questions about TypeScript's alignment with antifragile design principles. As the language evolves, will this change enhance TypeScript's antifragility, or will it introduce new rigidities and dependencies that could undermine the language's adaptability in an uncertain future?
 
@@ -76,7 +76,7 @@ This barbell approach gives developers the best of both worlds: the safety and t
 
 ### 3. Skin in the Game: Microsoft's Commitment
 
-TypeScript's development is driven by Microsoft, which has significant "skin in the game"—the language powers Microsoft's own large-scale codebases like Visual Studio Code and Microsoft Office Online. This alignment creates a positive feedback loop where the language evolves to solve real-world problems rather than theoretical concerns.
+TypeScript's development is driven by Microsoft, which has significant "skin in the game", the language powers Microsoft's own large-scale codebases like Visual Studio Code and Microsoft Office Online. This alignment creates a positive feedback loop where the language evolves to solve real-world problems rather than theoretical concerns.
 
 ## Potential Fragilities in the Go Compiler Transition
 
@@ -315,4 +315,4 @@ TypeScript's move to a Go-based compiler offers potential benefits in performanc
 
 The true test of an antifragile system is not how it performs during stability, but how it adapts to and improves from stress and change. This compiler transition represents just such a stress test. By applying antifragile design principles to the transition itself, TypeScript can emerge stronger, with greater optionality, clearer separation of concerns, and more robust implementation strategies.
 
-For the broader TypeScript ecosystem and community, this transition offers an opportunity to reevaluate assumptions and design choices that have accumulated over a decade of growth. The principles of antifragile design—optionality, barbell strategy, via negativa, and skin in the game—can provide a powerful framework for guiding this evolution toward a TypeScript that remains relevant and adaptable in an uncertain future.
+For the broader TypeScript ecosystem and community, this transition offers an opportunity to reevaluate assumptions and design choices that have accumulated over a decade of growth. The principles of antifragile design, optionality, barbell strategy, via negativa, and skin in the game, can provide a powerful framework for guiding this evolution toward a TypeScript that remains relevant and adaptable in an uncertain future.

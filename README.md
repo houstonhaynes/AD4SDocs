@@ -2,9 +2,9 @@
 
 ## Introduction: Beyond Resilience
 
-Antifragile Design For Systems (AD4S) represents a fundamental shift in how we approach the creation and evolution of complex technological systems. Drawing from Nassim Nicholas Taleb's concept of antifragility—systems that gain from disorder rather than merely withstanding it—this collection explores how programming languages, frameworks, and architectures can move beyond mere resilience toward designs that actively improve through exposure to volatility, randomness, and stress.
+Antifragile Design For Systems (AD4S) represents a fundamental shift in how we approach the creation and evolution of complex technological systems. Drawing from Nassim Nicholas Taleb's concept of antifragility, systems that gain from disorder rather than merely withstanding it, this collection explores how programming languages, frameworks, and architectures can move beyond mere resilience toward designs that actively improve through exposure to volatility, randomness, and stress.
 
-In an era of unprecedented technological change, the ability to thrive amid uncertainty has become a critical differentiator. Most traditional approaches to system design aim for robustness—the capacity to resist change without breaking. AD4S pushes further, examining how systems can be designed to harness volatility as a source of strength rather than merely defending against it.
+In an era of unprecedented technological change, the ability to thrive amid uncertainty has become a critical differentiator. Most traditional approaches to system design aim for robustness, the capacity to resist change without breaking. AD4S pushes further, examining how systems can be designed to harness volatility as a source of strength rather than merely defending against it.
 
 ## Core Tenets of Antifragile Design
 
@@ -20,7 +20,7 @@ This principle involves combining extreme safety on one end with controlled risk
 
 ### 3. Via Negativa
 
-Antifragile systems often improve through removal rather than addition—subtracting complexity, dependencies, or constraints that create hidden fragilities. This principle recognizes that what you don't do is often more important than what you do.
+Antifragile systems often improve through removal rather than addition, subtracting complexity, dependencies, or constraints that create hidden fragilities. This principle recognizes that what you don't do is often more important than what you do.
 
 ### 4. Skin in the Game
 
@@ -64,11 +64,11 @@ Each analysis in the AD4S collection follows a consistent methodology:
 
 ### 1. Current Antifragile Characteristics
 
-First, we identify aspects of the system that already demonstrate antifragile properties—features or design decisions that allow the system to gain from disorder rather than merely resist it.
+First, we identify aspects of the system that already demonstrate antifragile properties, features or design decisions that allow the system to gain from disorder rather than merely resist it.
 
 ### 2. Fragilities and Limitations
 
-Next, we examine areas where the system demonstrates fragility—points where stress or change might cause disproportionate harm or failure rather than adaptation and improvement.
+Next, we examine areas where the system demonstrates fragility, points where stress or change might cause disproportionate harm or failure rather than adaptation and improvement.
 
 ### 3. Pathways to Enhanced Antifragility
 
@@ -86,4 +86,4 @@ As new technologies emerge and existing ones evolve, the AD4S collection will ex
 
 In traditional engineering, uncertainty is seen as a problem to be eliminated. The antifragile approach inverts this perspective, viewing uncertainty as a potential source of strength when properly harnessed. As our technological landscape grows increasingly complex and unpredictable, this capacity to gain from disorder may prove to be the most valuable characteristic a system can possess.
 
-The AD4S collection aims to advance our understanding of how to design systems that embrace rather than merely tolerate volatility—systems that emerge stronger from the very challenges that would break more fragile alternatives. In doing so, it offers a pathway to technologies that don't simply resist the future but actively evolve to meet it.
+The AD4S collection aims to advance our understanding of how to design systems that embrace rather than merely tolerate volatility, systems that emerge stronger from the very challenges that would break more fragile alternatives. In doing so, it offers a pathway to technologies that don't simply resist the future but actively evolve to meet it.

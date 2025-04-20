@@ -81,10 +81,10 @@ These projects illustrate MLIR's expanding scope beyond traditional compiler app
 
 ## Conclusion: A Rich Basis for Embracing Computing's Future
 
-MLIR has established itself as much more than just another compiler infrastructure—it's becoming the connective tissue between diverse computing domains, programming models, and hardware targets. Its design philosophy of embracing multiple levels of abstraction within a unified framework has proven remarkably well-suited to the challenges of modern computing.
+MLIR has established itself as much more than just another compiler infrastructure, it's becoming the connective tissue between diverse computing domains, programming models, and hardware targets. Its design philosophy of embracing multiple levels of abstraction within a unified framework has proven remarkably well-suited to the challenges of modern computing.
 
 As specialized hardware continues to proliferate and software frameworks diversify, the need for flexible, adaptable compiler infrastructure will only grow. MLIR's community-driven approach and extensible architecture position it perfectly to meet these challenges.
 
-Whether for machine learning accelerators, quantum computers, embedded systems, or traditional CPUs and GPUs, MLIR provides a foundation that enables innovation while promoting interoperability. By bridging the gaps between different computing domains, MLIR is helping shape a more cohesive future for computing—one where specialized optimization doesn't have to come at the cost of fragmentation and duplication of effort.
+Whether for machine learning accelerators, quantum computers, embedded systems, or traditional CPUs and GPUs, MLIR provides a foundation that enables innovation while promoting interoperability. By bridging the gaps between different computing domains, MLIR is helping shape a more cohesive future for computing, one where specialized optimization doesn't have to come at the cost of fragmentation and duplication of effort.
 
-The diverse range of projects now building on MLIR—from OpenAI's Triton to Tenstorrent's TT-Forge, from ARM's embedded systems to AMD's hardware acceleration—testifies to the framework's versatility and impact. As computing continues to evolve, MLIR stands ready to evolve with it, providing the flexible infrastructure needed to turn cutting-edge ideas into practical reality.
+The diverse range of projects now building on MLIR, from OpenAI's Triton to Tenstorrent's TT-Forge, from ARM's embedded systems to AMD's hardware acceleration, testifies to the framework's versatility and impact. As computing continues to evolve, MLIR stands ready to evolve with it, providing the flexible infrastructure needed to turn cutting-edge ideas into practical reality.
