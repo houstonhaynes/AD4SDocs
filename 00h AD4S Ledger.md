@@ -2,7 +2,7 @@
 
 ## Introduction: Bridging Past, Present, and Future in Complex Systems
 
-Software systems exist in a constant state of evolution, shaped by countless decisions made across their lifecycle. The Antifragile Design for Systems (AD4S) framework recognizes this dynamic nature and introduces the AD4S Ledger, a temporal knowledge graph that captures not just what decisions were made, but when they occurred, why they were made, and how they continue to influence the system as it evolves.
+Software systems exist in a constant state of evolution, shaped by countless decisions made across their lifecycle. The Antifragile Design for Systems (AD4S) framework recognizes this dynamic nature and introduces the design of AD4S Ledger, conceived as a temporal knowledge graph that captures not just what decisions were made, but when they occurred, why they were made, and how they continue to influence the system as it evolves.
 
 This approach addresses a fundamental challenge in software engineering: the mismatch between system longevity and contributor tenure. While large software systems commonly survive for 13+ years, the average developer contributes to any single system for just over two years. This reality creates a critical knowledge preservation problem that traditional documentation methods cannot adequately solve.
 
@@ -23,6 +23,14 @@ The AD4S Ledger takes a fundamentally different approach by modeling the system 
 - **Properties** capture attributes of both nodes and edges, including temporal attributes that track when relationships formed, strengthened, weakened, or dissolved
 
 This graph structure allows teams to understand not just the current state of the system but its complete evolution, a critical capability for complex, long-lived systems.
+
+### Building on Version Control Foundations
+
+The principles behind AD4S Ledger aren't entirely new. Source control systems like Git have long demonstrated the value of temporal tracking and relationship mapping for code and configuration. Git's commit history, branching model, and merge tracking provide crucial context about how and why code evolved, preserving decision lineage and enabling exploration of alternative paths.
+
+What AD4S does is extend this powerful paradigm beyond just code to encompass the full spectrum of system development decisions. While Git captures what changed in the codebase, AD4S captures why those changes occurred—connecting technical implementations to business drivers, architectural principles, and operational constraints. By integrating code history with broader decision context, AD4S creates a unified knowledge foundation accessible to all stakeholders, not just developers.
+
+This approach bridges the traditional gap between technical artifacts (code, configurations) and business artifacts (requirements, strategies), creating a shared language that allows both technical and non-technical stakeholders to understand the full context of system evolution.
 
 ### The Event Sourcing Connection
 
